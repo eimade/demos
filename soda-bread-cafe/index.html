@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Soda Bread Café (demo website)</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;600&family=Work+Sans:wght@400;500;600&display=swap">
+<style>
+  :root { --bg:#f3f4ee; --ink:#1f2a24; --accent:#2f6b4f; --soft:#dfe6d8; --paper:#fff;
+          --display:"DM Serif Display", Georgia, serif; --body:"Work Sans", system-ui, sans-serif; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.6 var(--body); }
+  .demo { background:var(--ink); color:var(--bg); font-size:13px; text-align:center; padding:8px 16px; }
+  .wrap { max-width:1080px; margin:0 auto; padding-inline:20px; }
+  header { display:flex; justify-content:space-between; align-items:center; padding-block:22px; gap:16px; flex-wrap:wrap; }
+  .brand { font:600 26px/1 var(--display); }
+  nav { display:flex; gap:22px; flex-wrap:wrap; }
+  nav a { color:inherit; text-decoration:none; font-weight:500; }
+  .hero { display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; padding-block:40px 72px; }
+  .hero > * { min-width:0; }
+  .eyebrow { text-transform:uppercase; letter-spacing:.14em; font-size:13px; font-weight:600; color:var(--accent); }
+  h1 { font:400 clamp(40px,6vw,72px)/1.02 var(--display); margin:12px 0 18px; text-wrap:balance; }
+  .lede { font-size:19px; max-width:34em; margin:0 0 28px; opacity:.85; }
+  .btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:14px 24px; border-radius:999px; font-weight:600; }
+  .btn.alt { background:transparent; color:var(--ink); border:1.5px solid var(--ink); margin-left:8px; }
+  .art { aspect-ratio:1; max-width:100%; border-radius:50% 50% 24px 24px; background:var(--soft); position:relative; overflow:hidden; }
+  .art::before { content:""; position:absolute; width:62%; aspect-ratio:1; border-radius:50%; background:var(--accent); left:19%; top:16%; opacity:.9; }
+  .art::after { content:""; position:absolute; inset:auto 0 0 0; height:34%; background:var(--ink); }
+  .art span { position:absolute; z-index:1; bottom:9%; left:0; right:0; text-align:center; color:var(--bg); font:400 22px var(--display); }
+  section.band { background:var(--paper); padding-block:72px; }
+  h2 { font:400 40px/1.1 var(--display); margin:0 0 28px; }
+  .cards { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .card { border-top:3px solid var(--accent); padding-top:16px; }
+  .card h3 { margin:0 0 6px; font:600 20px var(--display); }
+  .card p { margin:0; opacity:.8; }
+  .visit { display:grid; grid-template-columns:repeat(3,1fr); gap:32px; padding-block:72px; }
+  .visit > div { min-width:0; }
+  .visit h3 { font:600 14px var(--body); text-transform:uppercase; letter-spacing:.12em; color:var(--accent); margin:0 0 10px; }
+  .visit p { margin:0; }
+  table { border-collapse:collapse; width:100%; }
+  td { padding:4px 0; vertical-align:top; } td + td { text-align:right; font-variant-numeric:tabular-nums; }
+  a { color:var(--accent); overflow-wrap:anywhere; }
+  footer { border-top:1px solid color-mix(in srgb, var(--ink) 15%, transparent); padding-block:24px 40px; font-size:14px; opacity:.75; }
+  @media (max-width:760px) { .hero, .cards, .visit { grid-template-columns:1fr; } .art { max-width:340px; } .btn.alt { margin:10px 0 0; } }
+</style>
+</head>
+<body>
+<div class="demo">Demo website prepared for Soda Bread Café by H.E. Studio. This is not the official site.</div>
+<div class="wrap">
+  <header><div class="brand">Soda Bread Café</div><nav><a href="#about">About</a><a href="#visit">Visit</a><a href="mailto:info@sodabreadcafe.com">Contact</a></nav></header>
+  <section class="hero">
+    <div>
+      <div class="eyebrow">An independent café in Birmingham's Jewellery Quarter</div>
+      <h1>Soda Bread Café</h1>
+      <p class="lede">Honest, homemade food with a warm welcome. A daily roast, proper pork pies and ingredients from local suppliers.</p>
+      <a class="btn" href="#visit">Find us</a><a class="btn alt" href="mailto:info@sodabreadcafe.com">Email us</a>
+    </div>
+    <div class="art" aria-hidden="true"><span>Birmingham</span></div>
+  </section>
+</div>
+<section class="band" id="about"><div class="wrap">
+  <h2>Why people come back</h2>
+  <div class="cards"><div class="card"><h3>Daily roast</h3><p>A proper roast, cooked fresh every day.</p></div><div class="card"><h3>Pork pies</h3><p>A Soda Bread favourite.</p></div><div class="card"><h3>Local suppliers</h3><p>Ingredients sourced from producers close to home.</p></div></div>
+</div></section>
+<div class="wrap">
+  <section class="visit" id="visit">
+    <div><h3>Opening hours</h3><table><tr><td>Monday – Friday</td><td>8:30 – 15:30</td></tr><tr><td>Saturday</td><td>Shorter hours</td></tr><tr><td>Sunday</td><td>Closed</td></tr></table></div>
+    <div><h3>Find us</h3><p>Ludgate Hill, Jewellery Quarter<br>Birmingham<br>B3 1QS</p><p style="margin-top:8px"><a href="https://www.google.com/maps/search/Soda%20Bread%20Caf%C3%A9%20Ludgate%20Hill%2C%20Jewellery%20Quarter%20Birmingham%20B3%201QS">Open in Google Maps</a></p></div>
+    <div><h3>Get in touch</h3><p><a href="mailto:info@sodabreadcafe.com">info@sodabreadcafe.com</a></p><p style="margin-top:8px;opacity:.8">Food hygiene rating: 5 (Very good), Food Standards Agency.</p></div>
+  </section>
+  <footer>© 2026 Soda Bread Café · Demo design by H.E. Studio, built for sodabreadcafe.com</footer>
+</div>
+</body>
+</html>
