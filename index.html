@@ -1,4 +1,505 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Demo websites</title>
-<body style="font:18px/1.6 system-ui,sans-serif;max-width:640px;margin:48px auto;padding:0 20px;background:#fafaf7;color:#1d1d1f">
-<h1 style="font-size:28px">Demo websites</h1><ul><li><a href="corner-and-bloom/">Corner &amp; Bloom</a></li><li><a href="soda-bread-cafe/">Soda Bread Café</a></li><li><a href="laboratorio-espresso/">Laboratorio Espresso</a></li><li><a href="remember-me-tattoo/">Remember Me Tattoo</a></li><li><a href="twin-oaks/">Twin Oaks</a></li><li><a href="la-pina/">La Piña</a></li><li><a href="canaille-et-petrin/">Canaille &amp; Pétrin</a></li><li><a href="maison-monge/">Maison Monge</a></li><li><a href="mama-no-bento/">Mama No Bento</a></li><li><a href="flowered-by/">Flowered By</a></li><li><a href="la-plume-vagabonde/">La Plume Vagabonde</a></li><li><a href="librairie-henri-iv/">Librairie Papeterie Henri IV</a></li><li><a href="la-petite-ourcq/">Librairie La Petite Ourcq</a></li><li><a href="la-nonna-lina/">La Nonna Lina</a></li><li><a href="racines/">Racines</a></li><li><a href="le-coquelet-braise/">Le Coquelet Braisé</a></li><li><a href="la-bici/">La Bici</a></li><li><a href="cafe-yvonne/">Café Yvonne</a></li><li><a href="little-barn/">Little Barn Coffee House</a></li><li><a href="david-kaye-books/">David Kaye Books &amp; Memorabilia</a></li><li><a href="le-bricheton/">Le Bricheton</a></li><li><a href="les-pieds-dans-l-herbe/">Les Pieds dans l'Herbe</a></li><li><a href="librairie-vignettes/">Librairie Vignettes</a></li><li><a href="creme/">Crème</a></li><li><a href="le-biody-canon/">Le Biody Canon</a></li><li><a href="le-souk-klagenfurt/">Le Souk</a></li><li><a href="chez-marie-lunel/">Chez Marie</a></li><li><a href="cafe-argana-aachen/">Café Argana</a></li><li><a href="hbb-funk-west/">Café H.b.b. Funk West</a></li><li><a href="argana-montreal/">Restaurant Argana</a></li><li><a href="karaz-paris/">Karaz</a></li><li><a href="damasquino-strasbourg/">Damasquino</a></li><li><a href="shawarma-du-village/">Shawarma Du Village</a></li><li><a href="le-beyritus/">Le Beyritus</a></li><li><a href="palestine-de-gaza/">Palestine de Gaza</a></li><li><a href="hot-falafel-gent/">Hot Falafel</a></li><li><a href="le-phenicien/">Le Phénicien</a></li><li><a href="shawarma-g-guelph/">Shawarma G</a></li></ul>
-<p>By <a href="https://eimade.github.io/portfolio/">H.E. Studio</a></p></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>H.E. Studio · Sites pour commerces de quartier</title>
+<meta name="description" content="Des sites simples, beaux et rapides pour restaurants, cafés, boulangeries et boutiques. 38 maquettes réalisées dans 7 pays.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+  :root { --paper:#f6f6f3; --ink:#121418; --sub:#5d636b; --line:#e2e2dc; --card:#ffffff; --spice:#e39a2f; --teal:#17605c; --dark:#121418;
+          --display:"Bricolage Grotesque", "Arial Narrow", sans-serif; --body:"DM Sans", system-ui, sans-serif; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 var(--body); }
+  a { color:inherit; }
+  .wrap { max-width:1180px; margin:0 auto; padding-inline:20px; }
+  header.top { position:sticky; top:0; z-index:10; background:color-mix(in srgb, var(--dark) 94%, transparent); backdrop-filter:blur(8px); color:#fff; }
+  header.top .wrap { display:flex; align-items:center; justify-content:space-between; gap:12px; padding-block:14px; }
+  .brand { font:800 21px/1 var(--display); letter-spacing:-.01em; text-decoration:none; }
+  .brand span { color:var(--spice); }
+  .tools { display:flex; gap:10px; align-items:center; }
+  .lang { background:transparent; border:1px solid rgba(255,255,255,.35); color:#fff; border-radius:999px; padding:6px 12px; font:500 13px var(--body); cursor:pointer; }
+  .btn { display:inline-block; background:var(--spice); color:var(--dark); text-decoration:none; font-weight:700; padding:12px 22px; border-radius:999px; border:0; }
+  .btn.small { padding:8px 16px; font-size:14px; }
+  .btn.ghost { background:transparent; color:#fff; border:1.5px solid rgba(255,255,255,.6); }
+  .hero { background:var(--dark); color:#fff; padding-block:72px 64px; overflow:hidden; position:relative; }
+  .hero .wrap { display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; }
+  .hero .wrap > * { min-width:0; }
+  .kicker { font:500 13px var(--body); letter-spacing:.14em; text-transform:uppercase; color:var(--spice); }
+  h1 { font:800 clamp(40px,6vw,72px)/1 var(--display); letter-spacing:-.02em; margin:14px 0 18px; text-wrap:balance; }
+  .hero p.lede { font-size:19px; color:#c9cdd3; max-width:34em; margin:0 0 26px; }
+  .ctas { display:flex; flex-wrap:wrap; gap:12px; }
+  .stats { display:flex; flex-wrap:wrap; gap:28px; margin-top:34px; }
+  .stats b { display:block; font:800 34px/1 var(--display); color:#fff; }
+  .stats span { font-size:14px; color:#9aa1a9; }
+  .stack { position:relative; height:380px; }
+  .stack img { position:absolute; width:78%; border-radius:12px; box-shadow:0 24px 60px rgba(0,0,0,.45); border:1px solid rgba(255,255,255,.12); }
+  .stack img:nth-child(1) { left:0; top:30px; transform:rotate(-4deg); }
+  .stack img:nth-child(2) { right:0; top:0; transform:rotate(3deg); }
+  .stack img:nth-child(3) { left:12%; bottom:0; transform:rotate(-1deg); }
+  section { padding-block:72px; }
+  h2 { font:800 clamp(30px,4vw,44px)/1.05 var(--display); letter-spacing:-.01em; margin:0 0 10px; text-wrap:balance; }
+  .intro { color:var(--sub); max-width:46em; margin:0 0 26px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:26px; }
+  .chip { border:1.5px solid var(--line); background:var(--card); border-radius:999px; padding:8px 14px; font:500 14px var(--body); cursor:pointer; color:var(--ink); }
+  .chip[aria-pressed="true"] { background:var(--ink); color:#fff; border-color:var(--ink); }
+  .chip small { opacity:.6; margin-left:4px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:22px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; transition:transform .2s, box-shadow .2s; }
+  .card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(18,20,24,.12); }
+  .shot { display:block; aspect-ratio:16/10.75; overflow:hidden; background:#ddd; }
+  .shot img { width:100%; height:100%; object-fit:cover; object-position:top; display:block; transition:transform .5s; }
+  .card:hover .shot img { transform:scale(1.03); }
+  .meta { padding:16px 18px 18px; display:grid; gap:4px; }
+  .meta .row { display:flex; justify-content:space-between; gap:10px; align-items:baseline; }
+  .meta h3 { margin:0; font:700 19px/1.25 var(--display); }
+  .star { font-weight:700; color:var(--teal); white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .meta p { margin:0; color:var(--sub); font-size:15px; }
+  .go { margin-top:8px; font-weight:700; color:var(--teal); text-decoration:none; }
+  .go:hover { text-decoration:underline; }
+  .card[hidden] { display:none; }
+  .band { background:var(--card); border-block:1px solid var(--line); }
+  .feat { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:26px; margin-top:28px; }
+  .feat div { border-top:3px solid var(--spice); padding-top:14px; }
+  .feat b { display:block; font:700 18px var(--display); margin-bottom:4px; }
+  .feat span { color:var(--sub); font-size:15px; }
+  .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:28px; }
+  .steps div { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; }
+  .steps em { font:800 40px/1 var(--display); font-style:normal; color:var(--spice); display:block; margin-bottom:8px; }
+  .steps b { display:block; font:700 18px var(--display); margin-bottom:4px; }
+  .steps span { color:var(--sub); font-size:15px; }
+  .contact { background:var(--dark); color:#fff; text-align:center; }
+  .contact p { color:#c9cdd3; max-width:36em; margin:0 auto 24px; }
+  .ways { display:flex; flex-wrap:wrap; justify-content:center; gap:14px; margin-top:6px; }
+  .way { display:flex; align-items:center; gap:14px; text-align:left; border-radius:14px; padding:14px 18px; min-width:280px; text-decoration:none; }
+  .way span { display:grid; } .way b { font-size:17px; } .way small { font-size:14px; opacity:.85; user-select:all; }
+  .wa { background:#25d366; color:#08311a; }
+  .wa:hover { filter:brightness(1.05); }
+  .mailbox { background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); color:#fff; justify-content:space-between; }
+  .copy { background:var(--spice); color:var(--dark); border:0; border-radius:999px; padding:8px 16px; font:700 14px var(--body); cursor:pointer; }
+  .mail { display:inline-block; margin-top:14px; color:#c9cdd3; font-size:15px; }
+  footer { background:var(--dark); color:#7d848c; font-size:13px; padding-block:22px; border-top:1px solid rgba(255,255,255,.08); }
+  :focus-visible { outline:3px solid var(--spice); outline-offset:2px; }
+  @media (max-width:860px) {
+    .hero .wrap { grid-template-columns:1fr; }
+    .stack { height:240px; }
+    .steps { grid-template-columns:1fr; }
+    .tools .btn { display:none; }
+  }
+  @media (prefers-reduced-motion:reduce) { * { transition:none !important; scroll-behavior:auto !important; } }
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="#">H.E.<span>·</span>Studio</a>
+  <div class="tools">
+    <button class="lang" id="lang" type="button">EN</button>
+    <a class="btn small" href="#contact" data-fr="Demander mon site" data-en="Get my website">Demander mon site</a>
+  </div>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="kicker" data-fr="Sites pour commerces de quartier" data-en="Websites for local businesses">Sites pour commerces de quartier</div>
+    <h1 data-fr="Des sites qui donnent envie de pousser la porte." data-en="Websites that make people walk through your door.">Des sites qui donnent envie de pousser la porte.</h1>
+    <p class="lede" data-fr="Restaurants, cafés, boulangeries, boutiques : je crée des sites simples, beaux et rapides, pensés pour une seule chose, vous amener des clients." data-en="Restaurants, cafés, bakeries, shops: I build simple, beautiful, fast websites designed for one thing, bringing you customers.">Restaurants, cafés, boulangeries, boutiques : je crée des sites simples, beaux et rapides, pensés pour une seule chose, vous amener des clients.</p>
+    <div class="ctas">
+      <a class="btn" href="#realisations" data-fr="Voir les réalisations" data-en="See the work">Voir les réalisations</a>
+      <a class="btn ghost" href="#contact" data-fr="Demander mon site" data-en="Get my website">Demander mon site</a>
+    </div>
+    <div class="stats">
+      <div><b>38</b><span data-fr="maquettes réalisées" data-en="demo sites built">maquettes réalisées</span></div>
+      <div><b>7</b><span data-fr="pays" data-en="countries">pays</span></div>
+      <div><b>72 h</b><span data-fr="pour être en ligne" data-en="to go live">pour être en ligne</span></div>
+    </div>
+  </div>
+  <div class="stack" aria-hidden="true">
+    <img src="thumbs/chez-marie-lunel.jpg" alt=""><img src="thumbs/mama-no-bento.jpg" alt=""><img src="thumbs/laboratorio-espresso.jpg" alt="">
+  </div>
+</div></section>
+
+<section id="realisations"><div class="wrap">
+  <h2 data-fr="Les réalisations" data-en="The work">Les réalisations</h2>
+  <p class="intro" data-fr="Chaque site est une maquette préparée pour un vrai commerce, à partir de ses informations publiques et de ses avis clients. Cliquez pour le visiter, sur ordinateur ou sur téléphone." data-en="Each site is a demo prepared for a real business, from its public information and customer reviews. Click to visit it, on desktop or phone.">Chaque site est une maquette préparée pour un vrai commerce, à partir de ses informations publiques et de ses avis clients. Cliquez pour le visiter, sur ordinateur ou sur téléphone.</p>
+  <div class="chips" role="group" aria-label="Filtrer">
+    <button class="chip" type="button" data-filter="all" aria-pressed="true"><span data-fr="Tous" data-en="All">Tous</span><small>38</small></button>
+    <button class="chip" type="button" data-filter="restaurant" aria-pressed="false"><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span><small>15</small></button>
+    <button class="chip" type="button" data-filter="cafe" aria-pressed="false"><span data-fr="Cafés" data-en="Cafés">Cafés</span><small>6</small></button>
+    <button class="chip" type="button" data-filter="bakery" aria-pressed="false"><span data-fr="Boulangeries &amp; épiceries" data-en="Bakeries &amp; delis">Boulangeries &amp; épiceries</span><small>7</small></button>
+    <button class="chip" type="button" data-filter="shop" aria-pressed="false"><span data-fr="Boutiques &amp; ateliers" data-en="Shops &amp; workshops">Boutiques &amp; ateliers</span><small>10</small></button>
+  </div>
+  <div class="grid" id="grid">
+<article class="card" data-cat="cafe">
+    <a class="shot" href="corner-and-bloom/"><img src="thumbs/corner-and-bloom.jpg" alt="Site de Corner &amp; Bloom" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Corner &amp; Bloom</h3></div>
+      <p><span data-fr="Cafés" data-en="Cafés">Cafés</span> · Didsbury, <span data-fr="Royaume-Uni" data-en="UK">Royaume-Uni</span></p>
+      <a class="go" href="corner-and-bloom/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="bakery">
+    <a class="shot" href="soda-bread-cafe/"><img src="thumbs/soda-bread-cafe.jpg" alt="Site de Soda Bread Café" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Soda Bread Café</h3></div>
+      <p><span data-fr="Boulangeries &amp; épiceries" data-en="Bakeries &amp; delis">Boulangeries &amp; épiceries</span> · Jewellery Quarter, <span data-fr="Royaume-Uni" data-en="UK">Royaume-Uni</span></p>
+      <a class="go" href="soda-bread-cafe/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="cafe">
+    <a class="shot" href="laboratorio-espresso/"><img src="thumbs/laboratorio-espresso.jpg" alt="Site de Laboratorio Espresso" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Laboratorio Espresso</h3></div>
+      <p><span data-fr="Cafés" data-en="Cafés">Cafés</span> · Glasgow city centre, <span data-fr="Royaume-Uni" data-en="UK">Royaume-Uni</span></p>
+      <a class="go" href="laboratorio-espresso/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="shop">
+    <a class="shot" href="remember-me-tattoo/"><img src="thumbs/remember-me-tattoo.jpg" alt="Site de Remember Me Tattoo" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Remember Me Tattoo</h3><span class="star">★ 5.0</span></div>
+      <p><span data-fr="Boutiques &amp; ateliers" data-en="Shops &amp; workshops">Boutiques &amp; ateliers</span> · Asheville, <span data-fr="États-Unis" data-en="USA">États-Unis</span></p>
+      <a class="go" href="remember-me-tattoo/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="twin-oaks/"><img src="thumbs/twin-oaks.jpg" alt="Site de Twin Oaks" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Twin Oaks</h3><span class="star">★ 4.5</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Savannah, TN, <span data-fr="États-Unis" data-en="USA">États-Unis</span></p>
+      <a class="go" href="twin-oaks/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="la-pina/"><img src="thumbs/la-pina.jpg" alt="Site de La Piña" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>La Piña</h3><span class="star">★ 4.4</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Savannah, TN, <span data-fr="États-Unis" data-en="USA">États-Unis</span></p>
+      <a class="go" href="la-pina/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="bakery">
+    <a class="shot" href="canaille-et-petrin/"><img src="thumbs/canaille-et-petrin.jpg" alt="Site de Canaille &amp; Pétrin" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Canaille &amp; Pétrin</h3><span class="star">★ 4,8</span></div>
+      <p><span data-fr="Boulangeries &amp; épiceries" data-en="Bakeries &amp; delis">Boulangeries &amp; épiceries</span> · Lyon, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="canaille-et-petrin/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="bakery">
+    <a class="shot" href="maison-monge/"><img src="thumbs/maison-monge.jpg" alt="Site de Maison Monge" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Maison Monge</h3><span class="star">★ 4,8</span></div>
+      <p><span data-fr="Boulangeries &amp; épiceries" data-en="Bakeries &amp; delis">Boulangeries &amp; épiceries</span> · Paris, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="maison-monge/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="mama-no-bento/"><img src="thumbs/mama-no-bento.jpg" alt="Site de Mama No Bento" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Mama No Bento</h3><span class="star">★ 4,9</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Paris, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="mama-no-bento/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="shop">
+    <a class="shot" href="flowered-by/"><img src="thumbs/flowered-by.jpg" alt="Site de Flowered By" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Flowered By</h3><span class="star">★ 4,8</span></div>
+      <p><span data-fr="Boutiques &amp; ateliers" data-en="Shops &amp; workshops">Boutiques &amp; ateliers</span> · Paris, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="flowered-by/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="shop">
+    <a class="shot" href="la-plume-vagabonde/"><img src="thumbs/la-plume-vagabonde.jpg" alt="Site de La Plume Vagabonde" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>La Plume Vagabonde</h3><span class="star">★ 4,8</span></div>
+      <p><span data-fr="Boutiques &amp; ateliers" data-en="Shops &amp; workshops">Boutiques &amp; ateliers</span> · Paris, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="la-plume-vagabonde/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="shop">
+    <a class="shot" href="librairie-henri-iv/"><img src="thumbs/librairie-henri-iv.jpg" alt="Site de Librairie Papeterie Henri IV" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Librairie Papeterie Henri IV</h3><span class="star">★ 4,6</span></div>
+      <p><span data-fr="Boutiques &amp; ateliers" data-en="Shops &amp; workshops">Boutiques &amp; ateliers</span> · Paris, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="librairie-henri-iv/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="shop">
+    <a class="shot" href="la-petite-ourcq/"><img src="thumbs/la-petite-ourcq.jpg" alt="Site de Librairie La Petite Ourcq" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Librairie La Petite Ourcq</h3><span class="star">★ 4,8</span></div>
+      <p><span data-fr="Boutiques &amp; ateliers" data-en="Shops &amp; workshops">Boutiques &amp; ateliers</span> · Paris, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="la-petite-ourcq/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="bakery">
+    <a class="shot" href="la-nonna-lina/"><img src="thumbs/la-nonna-lina.jpg" alt="Site de La Nonna Lina" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>La Nonna Lina</h3><span class="star">★ 4,7</span></div>
+      <p><span data-fr="Boulangeries &amp; épiceries" data-en="Bakeries &amp; delis">Boulangeries &amp; épiceries</span> · Toulouse, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="la-nonna-lina/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="bakery">
+    <a class="shot" href="racines/"><img src="thumbs/racines.jpg" alt="Site de Racines" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Racines</h3><span class="star">★ 5,0</span></div>
+      <p><span data-fr="Boulangeries &amp; épiceries" data-en="Bakeries &amp; delis">Boulangeries &amp; épiceries</span> · Nantes, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="racines/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="le-coquelet-braise/"><img src="thumbs/le-coquelet-braise.jpg" alt="Site de Le Coquelet Braisé" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Le Coquelet Braisé</h3><span class="star">★ 5,0</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Nantes, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="le-coquelet-braise/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="shop">
+    <a class="shot" href="la-bici/"><img src="thumbs/la-bici.jpg" alt="Site de La Bici" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>La Bici</h3><span class="star">★ 4,9</span></div>
+      <p><span data-fr="Boutiques &amp; ateliers" data-en="Shops &amp; workshops">Boutiques &amp; ateliers</span> · Lille, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="la-bici/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="cafe">
+    <a class="shot" href="cafe-yvonne/"><img src="thumbs/cafe-yvonne.jpg" alt="Site de Café Yvonne" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Café Yvonne</h3><span class="star">★ 5,0</span></div>
+      <p><span data-fr="Cafés" data-en="Cafés">Cafés</span> · Montréal, <span data-fr="Canada" data-en="Canada">Canada</span></p>
+      <a class="go" href="cafe-yvonne/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="cafe">
+    <a class="shot" href="little-barn/"><img src="thumbs/little-barn.jpg" alt="Site de Little Barn Coffee House" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Little Barn Coffee House</h3><span class="star">★ 4.7</span></div>
+      <p><span data-fr="Cafés" data-en="Cafés">Cafés</span> · Los Angeles, <span data-fr="États-Unis" data-en="USA">États-Unis</span></p>
+      <a class="go" href="little-barn/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="shop">
+    <a class="shot" href="david-kaye-books/"><img src="thumbs/david-kaye-books.jpg" alt="Site de David Kaye Books &amp; Memorabilia" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>David Kaye Books &amp; Memorabilia</h3><span class="star">★ 4.8</span></div>
+      <p><span data-fr="Boutiques &amp; ateliers" data-en="Shops &amp; workshops">Boutiques &amp; ateliers</span> · Woodland Hills, <span data-fr="États-Unis" data-en="USA">États-Unis</span></p>
+      <a class="go" href="david-kaye-books/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="bakery">
+    <a class="shot" href="le-bricheton/"><img src="thumbs/le-bricheton.jpg" alt="Site de Le Bricheton" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Le Bricheton</h3><span class="star">★ 4,7</span></div>
+      <p><span data-fr="Boulangeries &amp; épiceries" data-en="Bakeries &amp; delis">Boulangeries &amp; épiceries</span> · Paris, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="le-bricheton/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="shop">
+    <a class="shot" href="les-pieds-dans-l-herbe/"><img src="thumbs/les-pieds-dans-l-herbe.jpg" alt="Site de Les Pieds dans l'Herbe" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Les Pieds dans l'Herbe</h3><span class="star">★ 4,8</span></div>
+      <p><span data-fr="Boutiques &amp; ateliers" data-en="Shops &amp; workshops">Boutiques &amp; ateliers</span> · Paris, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="les-pieds-dans-l-herbe/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="shop">
+    <a class="shot" href="librairie-vignettes/"><img src="thumbs/librairie-vignettes.jpg" alt="Site de Librairie Vignettes" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Librairie Vignettes</h3><span class="star">★ 4,9</span></div>
+      <p><span data-fr="Boutiques &amp; ateliers" data-en="Shops &amp; workshops">Boutiques &amp; ateliers</span> · Paris, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="librairie-vignettes/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="bakery">
+    <a class="shot" href="creme/"><img src="thumbs/creme.jpg" alt="Site de Crème" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Crème</h3><span class="star">★ 4,7</span></div>
+      <p><span data-fr="Boulangeries &amp; épiceries" data-en="Bakeries &amp; delis">Boulangeries &amp; épiceries</span> · Paris, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="creme/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="shop">
+    <a class="shot" href="le-biody-canon/"><img src="thumbs/le-biody-canon.jpg" alt="Site de Le Biody Canon" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Le Biody Canon</h3><span class="star">★ 5,0</span></div>
+      <p><span data-fr="Boutiques &amp; ateliers" data-en="Shops &amp; workshops">Boutiques &amp; ateliers</span> · Lyon, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="le-biody-canon/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="le-souk-klagenfurt/"><img src="thumbs/le-souk-klagenfurt.jpg" alt="Site de Le Souk" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Le Souk</h3><span class="star">★ 4.9</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Klagenfurt, <span data-fr="Autriche" data-en="Austria">Autriche</span></p>
+      <a class="go" href="le-souk-klagenfurt/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="chez-marie-lunel/"><img src="thumbs/chez-marie-lunel.jpg" alt="Site de Chez Marie" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Chez Marie</h3><span class="star">★ 4,8</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Lunel, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="chez-marie-lunel/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="cafe">
+    <a class="shot" href="cafe-argana-aachen/"><img src="thumbs/cafe-argana-aachen.jpg" alt="Site de Café Argana" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Café Argana</h3><span class="star">★ 4.8</span></div>
+      <p><span data-fr="Cafés" data-en="Cafés">Cafés</span> · Aachen, <span data-fr="Allemagne" data-en="Germany">Allemagne</span></p>
+      <a class="go" href="cafe-argana-aachen/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="cafe">
+    <a class="shot" href="hbb-funk-west/"><img src="thumbs/hbb-funk-west.jpg" alt="Site de Café H.b.b. Funk West" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Café H.b.b. Funk West</h3><span class="star">★ 4.7</span></div>
+      <p><span data-fr="Cafés" data-en="Cafés">Cafés</span> · Leipzig, <span data-fr="Allemagne" data-en="Germany">Allemagne</span></p>
+      <a class="go" href="hbb-funk-west/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="argana-montreal/"><img src="thumbs/argana-montreal.jpg" alt="Site de Restaurant Argana" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Restaurant Argana</h3><span class="star">★ 4,1</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Montréal, <span data-fr="Canada" data-en="Canada">Canada</span></p>
+      <a class="go" href="argana-montreal/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="karaz-paris/"><img src="thumbs/karaz-paris.jpg" alt="Site de Karaz" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Karaz</h3><span class="star">★ 4,9</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Paris, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="karaz-paris/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="damasquino-strasbourg/"><img src="thumbs/damasquino-strasbourg.jpg" alt="Site de Damasquino" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Damasquino</h3><span class="star">★ 4,8</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Strasbourg, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="damasquino-strasbourg/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="shawarma-du-village/"><img src="thumbs/shawarma-du-village.jpg" alt="Site de Shawarma Du Village" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Shawarma Du Village</h3><span class="star">★ 4,9</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Rawdon, <span data-fr="Canada" data-en="Canada">Canada</span></p>
+      <a class="go" href="shawarma-du-village/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="le-beyritus/"><img src="thumbs/le-beyritus.jpg" alt="Site de Le Beyritus" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Le Beyritus</h3><span class="star">★ 4,7</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Paris, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="le-beyritus/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="palestine-de-gaza/"><img src="thumbs/palestine-de-gaza.jpg" alt="Site de Palestine de Gaza" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Palestine de Gaza</h3><span class="star">★ 4,9</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Marseille, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="palestine-de-gaza/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="hot-falafel-gent/"><img src="thumbs/hot-falafel-gent.jpg" alt="Site de Hot Falafel" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Hot Falafel</h3><span class="star">★ 4,6</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Gand, <span data-fr="Belgique" data-en="Belgium">Belgique</span></p>
+      <a class="go" href="hot-falafel-gent/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="le-phenicien/"><img src="thumbs/le-phenicien.jpg" alt="Site de Le Phénicien" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Le Phénicien</h3><span class="star">★ 4,6</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Baillargues, <span data-fr="France" data-en="France">France</span></p>
+      <a class="go" href="le-phenicien/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+<article class="card" data-cat="restaurant">
+    <a class="shot" href="shawarma-g-guelph/"><img src="thumbs/shawarma-g-guelph.jpg" alt="Site de Shawarma G" width="896" height="602"></a>
+    <div class="meta">
+      <div class="row"><h3>Shawarma G</h3><span class="star">★ 4.4</span></div>
+      <p><span data-fr="Restaurants" data-en="Restaurants">Restaurants</span> · Guelph, <span data-fr="Canada" data-en="Canada">Canada</span></p>
+      <a class="go" href="shawarma-g-guelph/"><span data-fr="Voir le site" data-en="View site">Voir le site</span> →</a>
+    </div>
+  </article>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <h2 data-fr="Ce que contient chaque site" data-en="What every site includes">Ce que contient chaque site</h2>
+  <div class="feat">
+    <div><b data-fr="Votre carte" data-en="Your menu">Votre carte</b><span data-fr="Vos plats ou vos produits, mis en valeur." data-en="Your dishes or products, beautifully shown.">Vos plats ou vos produits, mis en valeur.</span></div>
+    <div><b data-fr="Un bouton pour appeler" data-en="A call button">Un bouton pour appeler</b><span data-fr="Réserver ou commander en un clic." data-en="Book or order in one tap.">Réserver ou commander en un clic.</span></div>
+    <div><b data-fr="Horaires et plan" data-en="Hours and map">Horaires et plan</b><span data-fr="Pour qu'on vous trouve sans chercher." data-en="So people find you right away.">Pour qu'on vous trouve sans chercher.</span></div>
+    <div><b data-fr="Vos avis clients" data-en="Your reviews">Vos avis clients</b><span data-fr="Ce que vos clients disent de vous." data-en="What your customers say about you.">Ce que vos clients disent de vous.</span></div>
+    <div><b data-fr="Parfait sur téléphone" data-en="Perfect on mobile">Parfait sur téléphone</b><span data-fr="Là où vos clients vous cherchent." data-en="Where your customers look for you.">Là où vos clients vous cherchent.</span></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 data-fr="Comment ça marche" data-en="How it works">Comment ça marche</h2>
+  <div class="steps">
+    <div><em>1</em><b data-fr="Je prépare votre maquette" data-en="I prepare your demo">Je prépare votre maquette</b><span data-fr="Avec vos informations, vos avis et l'ambiance de votre commerce." data-en="With your information, your reviews and your place's atmosphere.">Avec vos informations, vos avis et l'ambiance de votre commerce.</span></div>
+    <div><em>2</em><b data-fr="Vous la personnalisez" data-en="You make it yours">Vous la personnalisez</b><span data-fr="On ajoute vos photos et votre carte, vous validez chaque détail." data-en="We add your photos and menu, you approve every detail.">On ajoute vos photos et votre carte, vous validez chaque détail.</span></div>
+    <div><em>3</em><b data-fr="Votre site est en ligne" data-en="Your site goes live">Votre site est en ligne</b><span data-fr="Sur votre propre nom de domaine, sans abonnement mensuel." data-en="On your own domain name, with no monthly fee.">Sur votre propre nom de domaine, sans abonnement mensuel.</span></div>
+  </div>
+</div></section>
+
+<section class="contact" id="contact"><div class="wrap">
+  <h2 data-fr="Votre commerce mérite un beau site." data-en="Your business deserves a great website.">Votre commerce mérite un beau site.</h2>
+  <p data-fr="Écrivez-moi : je vous prépare une maquette, et vous décidez ensuite." data-en="Write to me: I'll prepare a demo, and you decide afterwards.">Écrivez-moi : je vous prépare une maquette, et vous décidez ensuite.</p>
+  <div class="ways">
+    <a class="way wa" href="https://wa.me/212696118016?text=Salam%20alaykoum%2C%20j'ai%20vu%20vos%20sites%20sur%20H.E.%20Studio%20et%20je%20souhaite%20un%20site%20pour%20mon%20commerce." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg>
+      <span><b data-fr="Écrire sur WhatsApp" data-en="Message on WhatsApp">Écrire sur WhatsApp</b><small>+212 696 118 016</small></span>
+    </a>
+    <div class="way mailbox">
+      <span><b data-fr="Par email" data-en="By email">Par email</b><small id="mailaddr">uimad.dev@gmail.com</small></span>
+      <button type="button" class="copy" id="copy" data-fr="Copier" data-en="Copy">Copier</button>
+    </div>
+  </div>
+</div></section>
+<footer><div class="wrap">© 2026 H.E. Studio · Imad Ettifouri · <a href="https://eimade.github.io/portfolio/">Portfolio</a></div></footer>
+
+<script>
+  // Category filter
+  const chips = document.querySelectorAll(".chip");
+  chips.forEach(c => c.addEventListener("click", () => {
+    chips.forEach(x => x.setAttribute("aria-pressed", x === c));
+    const f = c.dataset.filter;
+    document.querySelectorAll(".card").forEach(card => { card.hidden = f !== "all" && card.dataset.cat !== f; });
+  }));
+  // Copy email (falls back to selecting the text)
+  document.getElementById("copy").addEventListener("click", async e => {
+    const btn = e.currentTarget, addr = document.getElementById("mailaddr").textContent;
+    try { await navigator.clipboard.writeText(addr); btn.textContent = lang === "fr" ? "Copié ✓" : "Copied ✓"; }
+    catch { const r = document.createRange(); r.selectNodeContents(document.getElementById("mailaddr")); getSelection().removeAllRanges(); getSelection().addRange(r); }
+    setTimeout(() => { btn.textContent = btn.dataset[lang]; }, 2000);
+  });
+  // FR / EN toggle (remembered in this browser)
+  let lang = "fr";
+  try { lang = localStorage.getItem("he-lang") || (navigator.language.startsWith("fr") ? "fr" : "en"); } catch {}
+  const apply = l => {
+    lang = l;
+    document.documentElement.lang = l;
+    document.querySelectorAll("[data-" + l + "]").forEach(el => { el.textContent = el.dataset[l]; });
+    document.getElementById("lang").textContent = l === "fr" ? "EN" : "FR";
+    try { localStorage.setItem("he-lang", l); } catch {}
+  };
+  document.getElementById("lang").addEventListener("click", () => apply(lang === "fr" ? "en" : "fr"));
+  apply(lang);
+</script>
+</body>
+</html>
