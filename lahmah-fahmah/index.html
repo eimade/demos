@@ -63,6 +63,7 @@
   .pick-list a:hover { background:#eef6f5; } .pick-list svg { width:20px; height:20px; fill:#25D366; }
   .bar .pick-list { top:auto; bottom:calc(100% + 8px); inset-inline:8px; }
   .facts { background:var(--ink); color:var(--bg); }
+  @media (max-width:820px) { .multi .branch iframe { display:none; } .gal figure:nth-child(odd):last-child { grid-column:1 / -1; } }
   .facts .wrap { display:flex; flex-wrap:wrap; justify-content:center; gap:10px 34px; padding-block:16px; font-weight:600; font-size:15px; }
   .facts .wrap > span::before { content:"✦"; margin-inline-end:10px; color:var(--gold); }
   section { padding-block:72px; }
