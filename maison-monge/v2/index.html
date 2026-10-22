@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Maison Monge · Paris 5e</title>
+<meta property="og:title" content="Maison Monge · proposition 2 de votre site">
+<meta property="og:description" content="Une proposition de site préparée pour Maison Monge par Uimad Studio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap">
+<style>
+  :root { --bg:#f5efe6; --ink:#2a201a; --accent:#9a5b2e; --muted:#7b6f66; }
+  * { box-sizing:border-box; } html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:300 18px/1.7 "Jost", system-ui, sans-serif; }
+  img { display:block; max-width:100%; }
+  a { color:inherit; }
+  
+  .props { position:sticky; top:0; z-index:50; display:flex; flex-wrap:wrap; gap:6px 10px; align-items:center; justify-content:center; padding:8px 12px; background:#2a201a; color:#f5efe6; font:600 13px/1.3 system-ui, sans-serif; }
+  .props span { opacity:.75; margin-inline-end:4px; }
+  .props a, .props b { padding:5px 12px; border-radius:999px; text-decoration:none; }
+  .props a { color:#f5efe6; border:1px solid currentColor; opacity:.85; } .props a:hover { opacity:1; }
+  .props b { background:#9a5b2e; color:#fff; }
+  .demo { font:12px/1.4 system-ui, sans-serif; text-align:center; padding:6px 12px; opacity:.7; }
+  .wrap { max-width:1240px; margin:0 auto; padding-inline:clamp(20px,4vw,48px); }
+  header.top { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:22px clamp(20px,4vw,48px); position:absolute; left:0; right:0; z-index:5; color:#fff; }
+  .logo { font:500 22px/1 "Jost", sans-serif; letter-spacing:.32em; text-transform:uppercase; text-decoration:none; }
+  header.top nav { display:flex; gap:28px; font:500 13px "Jost"; letter-spacing:.18em; text-transform:uppercase; }
+  header.top nav a { text-decoration:none; }
+  .hero { position:relative; height:min(92vh,860px); min-height:560px; color:#fff; display:grid; align-items:end; overflow:hidden; }
+  .hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transform:scale(1.04); animation:slow 18s ease-out forwards; }
+  @keyframes slow { to { transform:scale(1); } }
+  .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.05) 40%, rgba(0,0,0,.55)); }
+  .hero .wrap { position:relative; z-index:2; padding-bottom:clamp(40px,8vh,90px); width:100%; }
+  .hero h1 { font:400 clamp(54px,10vw,148px)/.9 "Jost", sans-serif; text-transform:uppercase; letter-spacing:-.01em; margin:0 0 18px; }
+  .hero p { font:italic 500 clamp(20px,2.4vw,28px)/1.35 "Cormorant Garamond", serif; margin:0; max-width:30em; }
+  .rating { display:inline-flex; gap:10px; align-items:center; margin-top:22px; font:500 14px "Jost"; letter-spacing:.12em; text-transform:uppercase; border-top:1px solid rgba(255,255,255,.5); padding-top:12px; }
+  section { padding-block:clamp(70px,10vw,130px); }
+  .label { font:500 13px "Jost"; letter-spacing:.24em; text-transform:uppercase; color:var(--accent); margin-bottom:18px; }
+  h2 { font:400 clamp(40px,7vw,96px)/.95 "Jost", sans-serif; text-transform:uppercase; margin:0 0 40px; letter-spacing:-.01em; }
+  .row { display:flex; justify-content:space-between; align-items:end; gap:20px; flex-wrap:wrap; }
+  .row a.more { font:500 13px "Jost"; letter-spacing:.22em; text-transform:uppercase; text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:4px; }
+  .strip { display:grid; grid-template-columns:repeat(4,1fr); gap:clamp(14px,2vw,28px); }
+  .strip figure { margin:0; }
+  .strip img { aspect-ratio:3/4; object-fit:cover; width:100%; filter:saturate(.95); transition:transform .8s; }
+  .strip figure:hover img { transform:scale(1.03); }
+  .strip .ph { overflow:hidden; }
+  .strip figcaption { margin-top:14px; display:flex; justify-content:space-between; gap:10px; font:400 17px "Jost"; }
+  .strip figcaption small { color:var(--muted); font-size:14px; }
+  .story { display:grid; grid-template-columns:1fr 1fr; gap:clamp(30px,6vw,90px); align-items:center; }
+  .story img { width:100%; aspect-ratio:4/5; object-fit:cover; }
+  .story p { font-size:20px; margin:0 0 18px; }
+  .story .big { font:italic 500 clamp(28px,3.4vw,44px)/1.2 "Cormorant Garamond", serif; margin-bottom:26px; }
+  .offer { border-top:1px solid color-mix(in srgb, var(--ink) 25%, transparent); }
+  .offer-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:0 60px; }
+  .item { display:flex; justify-content:space-between; gap:20px; padding:20px 0; border-bottom:1px solid color-mix(in srgb, var(--ink) 15%, transparent); }
+  .item b { font-weight:500; display:block; } .item span { color:var(--muted); font-size:15px; } .item em { font-style:normal; white-space:nowrap; font-weight:500; }
+  .quote { background:var(--ink); color:var(--bg); text-align:center; }
+  .quote blockquote { font:italic 500 clamp(28px,4vw,52px)/1.25 "Cormorant Garamond", serif; margin:0 auto; max-width:22em; }
+  .quote cite { display:block; margin-top:24px; font:500 13px "Jost"; letter-spacing:.24em; text-transform:uppercase; font-style:normal; opacity:.8; }
+  .visit-grid { display:grid; grid-template-columns:1fr 1fr; gap:clamp(30px,6vw,80px); }
+  table { width:100%; border-collapse:collapse; } td { padding:12px 0; border-bottom:1px solid color-mix(in srgb, var(--ink) 15%, transparent); } td + td { text-align:right; }
+  .contact a { display:inline-block; margin:10px 18px 0 0; font:500 14px "Jost"; letter-spacing:.16em; text-transform:uppercase; text-decoration:none; border-bottom:1px solid currentColor; padding-bottom:3px; }
+  iframe { width:100%; height:100%; min-height:380px; border:0; filter:grayscale(.4); }
+  footer { padding:40px 0; font-size:14px; color:var(--muted); }
+  footer .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px 30px; }
+  @media (max-width:820px) {
+    header.top nav { display:none; }
+    .strip { grid-template-columns:1fr 1fr; }
+    .story, .visit-grid { grid-template-columns:1fr; }
+  }
+  @media (prefers-reduced-motion:reduce) { .hero img { animation:none; transform:none; } }
+</style>
+</head>
+<body>
+<nav class="props" aria-label="Propositions">
+  <span>Maison Monge · choisissez votre site :</span>
+  <a href="../">Proposition 1</a><b aria-current="page">Proposition 2</b><a href="../v3/">Proposition 3</a>
+</nav>
+<header class="top"><a class="logo" href="#">Maison Monge</a>
+  <nav><a href="#vitrine">La carte</a><a href="#maison">La maison</a><a href="#venir">Nous trouver</a></nav></header>
+<section class="hero" style="padding:0"><img src="../img/g-assortiment.jpg" alt="Pâtisseries de Maison Monge"><div class="wrap">
+  <h1>Sortie du fournil</h1>
+  <p>Pâtisserie, chocolaterie et boulangerie rue Monge : pain de tradition, macarons maison, sandwichs préparés à la commande et café de spécialité.</p>
+  <div class="rating">★ 4,8 sur Google · 102 avis</div>
+</div></section>
+
+<section id="vitrine"><div class="wrap">
+  <div class="row"><div><div class="label">Aujourd'hui en vitrine</div><h2>Fait maison</h2></div><a class="more" href="#carte">Toute la carte</a></div>
+  <div class="strip"><figure><div class="ph"><img src="../img/g-macarons.jpg" alt="Macarons &amp; chocolats" loading="lazy"></div><figcaption><span>Macarons &amp; chocolats</span><small>maison</small></figcaption></figure><figure><div class="ph"><img src="../img/g-tarte.jpg" alt="Pâtisseries" loading="lazy"></div><figcaption><span>Pâtisseries</span><small>de la vitrine</small></figcaption></figure><figure><div class="ph"><img src="../img/g-viennoiseries.jpg" alt="Viennoiseries" loading="lazy"></div><figcaption><span>Viennoiseries</span><small>du matin</small></figcaption></figure><figure><div class="ph"><img src="../img/g-terrasse.jpg" alt="Pain aux raisins &amp; café" loading="lazy"></div><figcaption><span>Pain aux raisins &amp; café</span><small>en terrasse</small></figcaption></figure></div>
+</div></section>
+
+<section id="maison" style="padding-top:0"><div class="wrap story">
+  <img src="../img/g-vitrine.jpg" alt="La devanture de Maison Monge" loading="lazy">
+  <div><div class="label">La maison</div><p class="big">Le pain de tradition, les douceurs de la vitrine et un café en terrasse, à deux pas de la rue Mouffetard.</p><p>Pain Tradition à la farine Label Rouge et aux blés français, pains spéciaux (seigle, complet, viking, petit épeautre) aux farines biologiques, pâtisseries, chocolats et macarons faits maison. Et une terrasse pour prendre le temps, au cœur du Quartier latin.</p></div>
+</div></section>
+
+<section class="offer" id="carte"><div class="wrap">
+  <div class="label">La carte</div><h2>Formules &amp; cafés</h2>
+  <div class="offer-grid"><div><div class="label" style="margin:20px 0 0">Les formules</div><div class="item"><div><b>Petit-déjeuner</b><span>Jus d'orange, boisson chaude, viennoiserie ou 2 tartines beurre-confiture</span></div><em>6,90 €</em></div><div class="item"><div><b>Déjeuner</b><span>Sandwich, burger ou suédois, dessert et boisson</span></div><em>10,50 €</em></div><div class="item"><div><b>Quiche</b><span>Quiche, dessert et boisson</span></div><em>9,80 €</em></div><div class="item"><div><b>Étudiant</b><span>Sandwich, dessert et boisson</span></div><em>9,50 €</em></div></div><div><div class="label" style="margin:20px 0 0">Les cafés</div><div class="item"><div><b>Expresso</b><span>Cafés Richard</span></div><em>1,30 €</em></div><div class="item"><div><b>Double expresso</b></div><em>2,60 €</em></div><div class="item"><div><b>Café noisette</b></div><em>1,60 €</em></div><div class="item"><div><b>Café au lait (grand)</b></div><em>2,00 €</em></div><div class="item"><div><b>Cappuccino</b></div><em>2,50 €</em></div><div class="item"><div><b>Chocolat chaud</b></div><em>2,50 €</em></div><div class="item"><div><b>Thés</b><span>Vert à la menthe, fruits rouges, Earl Grey</span></div><em>2,50 €</em></div></div><div><div class="label" style="margin:20px 0 0">Le fournil</div><div class="item"><div><b>Pain Tradition</b><span>Farine Label Rouge, blés français, fabrication artisanale</span></div></div><div class="item"><div><b>Pains spéciaux</b><span>Seigle, complet, viking, petit épeautre, farines biologiques</span></div></div><div class="item"><div><b>Macarons maison</b></div></div><div class="item"><div><b>Pâtisseries &amp; chocolats</b></div></div></div></div>
+  <p style="color:var(--muted);font-size:15px;margin-top:26px">Prix affichés en boutique.</p>
+</div></section>
+
+<section class="quote"><div class="wrap">
+  <blockquote>“Une boulangerie pâtisserie exceptionnelle ! Un service aimable, dévoué et une ambiance parisienne qui vous donne envie d'y rester toute la matinée.”</blockquote><cite>Ben N. · avis Google</cite>
+</div></section>
+
+<section id="venir"><div class="wrap visit-grid">
+  <div><div class="label">Nous trouver</div><h2 style="font-size:clamp(36px,5vw,64px)">70 rue Monge</h2>
+    <table><tr><td>Lundi</td><td>Fermé</td></tr><tr><td>Mardi – Dimanche</td><td>7:00 – 20:30</td></tr></table>
+    <p class="contact"><a href="tel:0143314066">01 43 31 40 66</a><a href="mailto:commande@maisonmonge.fr">Commander par email</a><a href="https://www.google.com/maps/search/?api=1&query=Maison%20Monge%2C%2070%20rue%20Monge%2C%2075005%20Paris">Itinéraire</a></p>
+    <p style="color:var(--muted)">70 rue Monge, 75005 Paris</p></div>
+  <iframe title="Plan" loading="lazy" src="https://maps.google.com/maps?q=Maison%20Monge%2C%2070%20rue%20Monge%2C%2075005%20Paris&z=16&output=embed"></iframe>
+</div></section>
+
+<footer><div class="wrap"><span>© 2026 Maison Monge · 70 rue Monge, 75005 Paris</span><span>Photos de la fiche Google de Maison Monge.</span></div></footer>
+<p class="demo">Démo préparée pour Maison Monge par Uimad Studio. Ce n'est pas le site officiel.</p>
+<script>try{if(/github\.io$|gt\.tc$/.test(location.hostname))new Image().src="https://script.google.com/macros/s/AKfycbwT_75Rs8ZV6YeH874yP-UA_grZhIppzJoauUtmGz5oRdehOFW4YrJRW-vXeh3ERiJH/exec"+"?t=visit&id=maison-monge-v2&ua="+encodeURIComponent(new URLSearchParams(location.search).get("r")||"direct")}catch(e){}</script>
+</body>
+</html>
