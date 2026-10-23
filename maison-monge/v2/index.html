@@ -130,6 +130,14 @@
     #site-nav ul { flex-direction:column; gap:22px; } #site-nav ul a { font-size:clamp(28px,8vw,40px); letter-spacing:.06em; }
     .story, .panel-grid, .visit { grid-template-columns:1fr; } .panel-img { position:static; } .panel-img img { aspect-ratio:16/10; }
   }
+  /* services (b.extras) */
+  .extras-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .extra { margin:0; }
+  .extra img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--ex-radius,16px); }
+  .extra h3 { margin:16px 0 6px; font-size:20px; }
+  .extra p { margin:0; opacity:.8; font-size:.95em; }
+  .brand-logo { height:var(--logo-h,48px); width:auto; display:block; }
+
 </style>
 </head>
 <body>
@@ -164,6 +172,7 @@
   <div class="reveal"><img src="../img/opt/g-facade-1600.jpg" srcset="../img/opt/g-facade-800.jpg 800w, ../img/opt/g-facade-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 50vw" alt="La devanture de Maison Monge" loading="lazy" decoding="async"></div>
   <div class="reveal"><div class="label">La maison</div><p class="big">Le pain de tradition, les douceurs de la vitrine et un café en terrasse, à deux pas de la rue Mouffetard.</p><p>Pain Tradition à la farine Label Rouge et aux blés français, pains spéciaux (seigle, complet, viking, petit épeautre) aux farines biologiques, pâtisseries, chocolats et macarons faits maison. Et une terrasse pour prendre le temps, au cœur du Quartier latin.</p></div>
 </div></section>
+
 
 <section class="carte-wrap" id="carte"><div class="wrap">
   <div class="label reveal">La carte</div><h2 class="reveal">La carte de la maison</h2>

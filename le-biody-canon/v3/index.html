@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Le Biody Canon · Bar à vin et cave de vins vivants, place Fernand Rey, Lyon 1er</title>
+<meta name="description" content="Bar à vin et cave de vins vivants, place Fernand Rey : des canons choisis par Yorel, notre sommelier, des charcuteries artisanales et des fromages de caractère, et une terrasse toute l'année.">
+<meta property="og:title" content="Le Biody Canon · proposition 3 de votre site">
+<meta property="og:description" content="Une proposition de site préparée pour Le Biody Canon par Uimad Studio.">
+<meta property="og:image" content="https://uimadstudio.github.io/le-biody-canon/email-p3.jpg">
+<meta name="theme-color" content="#c0603e">
+<link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml"><link rel="icon" href="/favicon.ico?v=2" sizes="48x48"><link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,800;1,9..144,700&family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500;700&family=Karla:wght@400;600;700&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BarOrPub","name":"Le Biody Canon","address":{"@type":"PostalAddress","streetAddress":"5 place Fernand Rey","postalCode":"69001","addressLocality":"Lyon","addressCountry":"FR"},"telephone":"09 60 03 79 09","email":"lebiodycanon@gmail.com","image":"https://uimadstudio.github.io/thumbs/le-biody-canon.jpg","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"17:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"17:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"11:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"17:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"17:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"17:00","closes":"00:00"}]}</script>
+<style>
+  *,*::before,*::after { box-sizing:border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:90px; -webkit-text-size-adjust:100%; }
+  body { margin:0; }
+  img { display:block; max-width:100%; height:auto; }
+  a { color:inherit; }
+  .skip { position:absolute; left:-999px; top:8px; z-index:100; background:#000; color:#fff; padding:8px 14px; border-radius:8px; }
+  .skip:focus { left:8px; }
+  :focus-visible { outline:3px solid var(--focus, #1a73e8); outline-offset:3px; }
+  .props { display:flex; flex-wrap:wrap; gap:6px 8px; align-items:center; justify-content:center; padding:7px 12px; font:600 12.5px/1.3 system-ui, sans-serif; background:var(--props-bg); color:var(--props-ink); }
+  .props-t { opacity:.75; margin-inline-end:4px; }
+  .props a, .props b { padding:4px 11px; border-radius:999px; text-decoration:none; }
+  .props a { border:1px solid currentColor; opacity:.85; } .props a:hover { opacity:1; }
+  .props b { background:var(--props-on); color:#fff; }
+  .demo-note { font:12px/1.4 system-ui, sans-serif; text-align:center; padding:10px 16px 90px; opacity:.6; margin:0; }
+  /* navigation */
+  .nav-toggle { display:none; width:46px; height:46px; border:0; background:transparent; border-radius:12px; cursor:pointer; position:relative; color:inherit; }
+  .nav-toggle span { position:absolute; left:12px; right:12px; height:2px; background:currentColor; border-radius:2px; transition:transform .3s, opacity .2s, top .3s; }
+  .nav-toggle span:nth-child(1) { top:16px; } .nav-toggle span:nth-child(2) { top:22px; } .nav-toggle span:nth-child(3) { top:28px; }
+  .nav-open .nav-toggle span:nth-child(1) { top:22px; transform:rotate(45deg); }
+  .nav-open .nav-toggle span:nth-child(2) { opacity:0; }
+  .nav-open .nav-toggle span:nth-child(3) { top:22px; transform:rotate(-45deg); }
+  /* menu tabs (la carte) */
+  .tabs { display:flex; flex-wrap:wrap; gap:8px; }
+  .tab-panel[hidden] { display:none; }
+  .js .tab-panel { animation:panelIn .45s ease both; }
+  @keyframes panelIn { from { opacity:0; transform:translateY(8px); } }
+  .row { display:flex; align-items:baseline; gap:10px; }
+  .row .name { font-weight:600; }
+  .row .dots { flex:1; border-bottom:2px dotted var(--dots, rgba(0,0,0,.25)); transform:translateY(-4px); min-width:20px; }
+  .row .price { white-space:nowrap; font-variant-numeric:tabular-nums; font-weight:700; }
+  .desc { margin:4px 0 0; font-size:.9em; opacity:.72; }
+  /* hours */
+  .hours { width:100%; border-collapse:collapse; }
+  .hours td { padding:9px 0; border-bottom:1px solid var(--line); }
+  .hours td + td { text-align:right; font-variant-numeric:tabular-nums; }
+  .hours tr.today td { font-weight:700; color:var(--accent); }
+  .open-badge { display:inline-flex; align-items:center; gap:8px; font:600 13px/1 system-ui, sans-serif; padding:7px 12px; border-radius:999px; background:var(--badge-bg, #fff); color:var(--badge-ink, #222); }
+  .open-badge i { width:8px; height:8px; border-radius:50%; background:#999; }
+  .open-badge.yes i { background:#1fa463; box-shadow:0 0 0 4px rgba(31,164,99,.2); } .open-badge.no i { background:#d9534f; }
+  /* reveal */
+  .js .reveal { opacity:0; transform:translateY(22px); transition:opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
+  .js .reveal.in { opacity:1; transform:none; }
+  /* mobile action bar */
+  .actionbar { position:fixed; left:0; right:0; bottom:0; z-index:40; display:none; gap:8px; padding:10px 12px calc(10px + env(safe-area-inset-bottom)); background:var(--bar-bg); box-shadow:0 -6px 24px rgba(0,0,0,.1); }
+  .actionbar a { flex:1; text-align:center; padding:13px 8px; border-radius:12px; font:700 15px/1 system-ui, sans-serif; text-decoration:none; }
+  .actionbar a.main { background:var(--accent); color:#fff; flex:1.3; } .actionbar a.alt { border:1.5px solid currentColor; }
+  @media (max-width:860px) { .actionbar { display:flex; } }
+  @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; } html { scroll-behavior:auto; } .js .reveal { opacity:1; transform:none; } }
+
+  :root { --bg:#fbf3ea; --ink:#2b1117; --accent:#c0603e; --pop:#f3c9a8; --card:#fff; --line:color-mix(in srgb, #2b1117 12%, transparent); --dots:color-mix(in srgb, #fff 35%, transparent); --muted:color-mix(in srgb, #2b1117 70%, transparent);
+          --props-bg:#c0603e; --props-ink:#fff; --props-on:#2b1117; --bar-bg:color-mix(in srgb, #fbf3ea 94%, transparent); --focus:#c0603e; }
+  body { background:var(--bg); color:var(--ink); font:400 17px/1.6 "Inter", system-ui, sans-serif; }
+  .wrap { max-width:1200px; margin:0 auto; padding-inline:clamp(16px,3vw,28px); }
+  .site-header { position:sticky; top:10px; z-index:30; padding-inline:clamp(10px,2vw,20px); margin-top:10px; }
+  .bar { display:flex; align-items:center; justify-content:space-between; gap:16px; max-width:1200px; margin:0 auto; padding:10px 12px 10px 22px; background:color-mix(in srgb, #fff 92%, transparent); backdrop-filter:blur(12px); border-radius:999px; box-shadow:0 8px 30px rgba(0,0,0,.08); }
+  .brand { font:800 24px/1 "Fraunces", serif; color:var(--accent); text-decoration:none; }
+  #site-nav { display:flex; align-items:center; gap:22px; }
+  #site-nav ul { list-style:none; margin:0; padding:0; display:flex; gap:4px; }
+  #site-nav ul a { display:block; padding:9px 14px; border-radius:999px; text-decoration:none; font:600 14.5px "Inter"; transition:background .2s; }
+  #site-nav ul a:hover { background:color-mix(in srgb, var(--accent) 12%, transparent); }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:14px 22px; border-radius:16px; font:700 15.5px "Inter"; text-decoration:none; transition:transform .15s, box-shadow .2s; }
+  .btn:hover { transform:translateY(-2px); }
+  .btn.main { background:var(--accent); color:#fff; box-shadow:0 10px 24px color-mix(in srgb, var(--accent) 35%, transparent); }
+  .btn.alt { background:#fff; color:var(--ink); border:2px solid var(--ink); }
+  #site-nav .btn { padding:11px 18px; border-radius:999px; }
+  .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(24px,5vw,60px); align-items:center; padding-block:clamp(36px,6vw,80px); }
+  .hero h1 { font:800 clamp(44px,6.6vw,92px)/.98 "Fraunces", serif; margin:16px 0 20px; letter-spacing:-.025em; }
+  .hero h1 em { font-style:italic; color:var(--accent); }
+  .hero p.lead { font-size:19px; margin:0 0 26px; max-width:32em; color:var(--muted); }
+  .btns { display:flex; flex-wrap:wrap; gap:12px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:26px; }
+  .chips span { background:#fff; border-radius:999px; padding:8px 14px; font:600 14px "Inter"; box-shadow:0 2px 10px rgba(0,0,0,.05); }
+  .pic { position:relative; }
+  .pic img { width:100%; aspect-ratio:1; object-fit:cover; border-radius:44px 44px 44px 150px; }
+  .sticker { position:absolute; top:16px; right:-4px; width:126px; height:126px; border-radius:50%; background:var(--pop); display:grid; place-items:center; text-align:center; font:800 22px/1.05 "Fraunces", serif; transform:rotate(8deg); box-shadow:0 12px 24px rgba(0,0,0,.14); animation:wobble 6s ease-in-out infinite; }
+  .sticker small { display:block; font:600 12px "Inter"; margin-top:4px; }
+  @keyframes wobble { 50% { transform:rotate(-4deg) scale(1.04); } }
+  .pic .open-badge { position:absolute; left:18px; bottom:18px; --badge-bg:#fff; box-shadow:0 8px 20px rgba(0,0,0,.12); }
+  section { padding-block:clamp(60px,8vw,100px); }
+  h2 { font:800 clamp(34px,4.8vw,62px)/1.02 "Fraunces", serif; margin:0 0 12px; letter-spacing:-.015em; }
+  .sub { font-size:18px; color:var(--muted); margin:0 0 34px; max-width:40em; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; }
+  .card { background:var(--card); border-radius:28px; overflow:hidden; box-shadow:0 6px 24px rgba(0,0,0,.06); transition:transform .25s, box-shadow .25s; }
+  .card:hover { transform:translateY(-6px) rotate(-.6deg); box-shadow:0 20px 44px rgba(0,0,0,.12); }
+  .card img { width:100%; aspect-ratio:4/3; object-fit:cover; }
+  .card div { padding:18px 20px 22px; } .card b { font:800 21px "Fraunces", serif; display:block; } .card span { color:var(--muted); font-size:15px; }
+  .menu-sec { background:var(--ink); color:#fff; border-radius:44px; margin-inline:clamp(8px,1.5vw,16px); }
+  .menu-sec h2 { color:#fff; } .menu-sec .sub { color:rgba(255,255,255,.75); }
+  .menu-sec .tabs { margin-bottom:34px; }
+  .tab { background:rgba(255,255,255,.1); color:#fff; border:0; padding:11px 18px; border-radius:999px; font:600 14.5px "Inter"; cursor:pointer; transition:background .2s, color .2s; }
+  .tab[aria-selected="true"] { background:var(--pop); color:var(--ink); }
+  .panel-grid { display:grid; grid-template-columns:.85fr 1.15fr; gap:clamp(24px,4vw,50px); align-items:start; }
+  .panel-grid.no-img { grid-template-columns:1fr; }
+  .panel-img { margin:0; } .panel-img img { border-radius:28px; aspect-ratio:1; object-fit:cover; width:100%; }
+  .items { list-style:none; margin:0; padding:0; display:grid; gap:12px; }
+  .items li { background:rgba(255,255,255,.06); border-radius:18px; padding:16px 18px; }
+  .row .name { font:700 17px "Inter"; } .row .price { background:var(--pop); color:var(--ink); padding:4px 10px; border-radius:999px; font:800 15px "Inter"; }
+  .row .price.tag { background:rgba(255,255,255,.14); color:#fff; font-weight:600; }
+  .menu-sec .desc { opacity:.75; }
+  .menu-note { color:rgba(255,255,255,.7); font-size:14.5px; margin:24px 0 0; }
+  .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; counter-reset:s; }
+  .steps div { background:#fff; border-radius:28px; padding:30px 26px 26px; position:relative; box-shadow:0 6px 24px rgba(0,0,0,.05); }
+  .steps div::before { counter-increment:s; content:counter(s); position:absolute; top:-18px; left:24px; width:44px; height:44px; border-radius:50%; background:var(--accent); color:#fff; display:grid; place-items:center; font:800 20px "Fraunces", serif; }
+  .steps b { display:block; font:800 21px "Fraunces", serif; margin:10px 0 6px; }
+  .reviews { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; }
+  .reviews figure { margin:0; background:var(--pop); border-radius:28px; padding:30px; }
+  .reviews blockquote { margin:0; font:700 italic 21px/1.4 "Fraunces", serif; }
+  .reviews figcaption { margin-top:14px; font:600 14px "Inter"; }
+  .visit { display:grid; grid-template-columns:1fr 1.1fr; gap:24px; align-items:stretch; }
+  .box { background:#fff; border-radius:28px; padding:30px; box-shadow:0 6px 24px rgba(0,0,0,.05); }
+  .box h3 { font:700 12.5px "Inter"; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:22px 0 8px; } .box h3:first-child { margin-top:0; }
+  .map { border-radius:28px; overflow:hidden; min-height:380px; } .map iframe { width:100%; height:100%; min-height:380px; border:0; display:block; }
+  footer { padding:30px 0; font-size:14px; color:var(--muted); }
+  @media (max-width:900px) {
+    .nav-toggle { display:block; }
+    #site-nav { position:absolute; top:calc(100% + 10px); left:clamp(10px,2vw,20px); right:clamp(10px,2vw,20px); flex-direction:column; align-items:stretch; gap:10px; padding:16px; background:#fff; border-radius:28px; box-shadow:0 20px 50px rgba(0,0,0,.15); transform:translateY(-10px) scale(.98); opacity:0; visibility:hidden; transition:all .25s; }
+    .nav-open #site-nav { transform:none; opacity:1; visibility:visible; }
+    #site-nav ul { flex-direction:column; } #site-nav ul a { font-size:18px; padding:12px 14px; }
+    .hero, .panel-grid, .visit { grid-template-columns:1fr; } .steps { grid-template-columns:1fr; gap:34px; }
+    .sticker { width:100px; height:100px; font-size:18px; right:8px; }
+    .panel-img img { aspect-ratio:16/10; }
+  }
+  /* services (b.extras) */
+  .extras-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .extra { margin:0; }
+  .extra img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--ex-radius,16px); }
+  .extra h3 { margin:16px 0 6px; font-size:20px; }
+  .extra p { margin:0; opacity:.8; font-size:.95em; }
+  .brand-logo { height:var(--logo-h,48px); width:auto; display:block; }
+
+  body { font-family:"Karla", system-ui, sans-serif;
+    background:radial-gradient(900px 600px at 8% 4%, rgba(243,201,168,.55), transparent 60%), radial-gradient(800px 700px at 96% 30%, rgba(192,96,62,.16), transparent 60%), radial-gradient(900px 700px at 20% 90%, rgba(171,196,160,.30), transparent 60%), #fbf3ea; }
+  .hero h1, h2, .card b, .steps b, .reviews blockquote, .sticker, .brand { font-family:"Caveat", cursive !important; font-weight:700; letter-spacing:0; }
+  .hero h1 { font-size:clamp(56px,8vw,112px); line-height:.95; }
+  h2 { font-size:clamp(46px,6vw,78px); }
+  .card b { font-size:30px; } .steps b { font-size:30px; } .reviews blockquote { font-size:28px; font-style:normal; line-height:1.25; }
+  .bar { background:rgba(255,250,244,.85); } .brand-logo { --logo-h:40px; }
+  .pic img { border-radius:255px 30px 225px 30px / 30px 225px 30px 255px; box-shadow:0 30px 60px -25px rgba(43,17,23,.45); }
+  .sticker { background:#f3c9a8; font-size:34px; border-radius:58% 42% 55% 45% / 47% 58% 42% 53%; }
+  .card { background:#fffaf4; padding:12px 12px 0; border-radius:6px; box-shadow:0 14px 30px rgba(43,17,23,.12); }
+  .card:nth-child(odd) { transform:rotate(-1.4deg); } .card:nth-child(even) { transform:rotate(1.2deg); }
+  .card:hover { transform:rotate(0) translateY(-6px); }
+  .card img { border-radius:3px; }
+  .menu-sec { background:#2b1117 radial-gradient(700px 400px at 90% 0%, rgba(192,96,62,.35), transparent 60%); }
+  .menu-sec h2 { color:#f3c9a8; }
+  .tab[aria-selected="true"] { background:#f3c9a8; }
+  .row .price { background:#f3c9a8; }
+  .steps div { background:#fffaf4; border:1px dashed rgba(43,17,23,.25); box-shadow:none; }
+  .reviews figure { background:#f3c9a8; border-radius:40px 8px 40px 8px; }
+  .extras .extra { background:#fffaf4; padding:12px; border-radius:6px; box-shadow:0 14px 30px rgba(43,17,23,.1); }
+  .extras .extra:nth-child(odd) { transform:rotate(-1deg); } .extras .extra:nth-child(even) { transform:rotate(1deg); }
+  .extras .extra h3 { font:700 30px "Caveat", cursive; margin-top:10px; } .extras .extra img { border-radius:3px; }
+  .box, .map { box-shadow:0 14px 30px rgba(43,17,23,.08); }
+</style>
+</head>
+<body>
+<a class="skip" href="#carte">Aller à la carte</a>
+<div class="props" role="navigation" aria-label="Propositions de site">
+  <span class="props-t">Le Biody Canon · choisissez votre site</span>
+  <a href="../">Proposition 1</a><a href="../v2/">Proposition 2</a><b aria-current="page">Proposition 3</b>
+</div>
+<header class="site-header"><div class="bar">
+  <a class="brand" href="#top"><img class="brand-logo" src="../img/logo-2b1117.png" alt="Le Biody Canon"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+  <nav id="site-nav" aria-label="Navigation principale"><ul>
+        <li><a href="#carte">La carte</a></li>
+        <li><a href="#maison">La maison</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#infos">Infos & accès</a></li>
+      </ul><a class="btn main" href="tel:+33960037909">Réserver par téléphone</a></nav>
+</div></header>
+<main id="top">
+<div class="wrap"><section class="hero">
+  <div class="reveal">
+    <h1>Trouvez votre <em>prochaine pépite</em></h1>
+    <p class="lead">Bar à vin et cave de vins vivants, place Fernand Rey : des canons choisis par Yorel, notre sommelier, des charcuteries artisanales et des fromages de caractère, et une terrasse toute l'année.</p>
+    <div class="btns"><a class="btn main" href="#carte">Voir la carte</a><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Le%20Biody%20Canon%2C%205%20place%20Fernand%20Rey%2C%2069001%20Lyon">Itinéraire</a></div>
+    <div class="chips"><span>Vins vivants</span><span>Prix caviste</span><span>Ateliers dégustation</span><span>Terrasse toute l'année</span></div>
+  </div>
+  <div class="pic reveal"><img src="../img/opt/b-assiettes-1600.jpg" srcset="../img/opt/b-assiettes-800.jpg 800w, ../img/opt/b-assiettes-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 46vw" alt="La salle du Biody Canon" fetchpriority="high" decoding="async">
+    <div class="sticker"><div>★ 5,0<small>71 avis Google</small></div></div>
+    <span class="open-badge"><i></i><span>Horaires</span></span></div>
+</section></div>
+
+<section id="maison" style="padding-top:10px"><div class="wrap">
+  <h2 class="reveal">Sur l'ardoise</h2><p class="sub reveal">Des vins en biodynamie, des vignerons qu'on connaît, et de quoi les accompagner.</p>
+  <div class="cards"><article class="card reveal"><img src="../img/opt/b-selection-1600.jpg" srcset="../img/opt/b-selection-800.jpg 800w, ../img/opt/b-selection-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 25vw" alt="Blancs de soif" loading="lazy" decoding="async"><div><b>Blancs de soif</b><span>Pour lancer l'apéro.</span></div></article><article class="card reveal"><img src="../img/opt/b-orange-1600.jpg" srcset="../img/opt/b-orange-800.jpg 800w, ../img/opt/b-orange-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 25vw" alt="Vins de macération" loading="lazy" decoding="async"><div><b>Vins de macération</b><span>Les « orange », au comptoir.</span></div></article><article class="card reveal"><img src="../img/opt/b-planche-1600.jpg" srcset="../img/opt/b-planche-800.jpg 800w, ../img/opt/b-planche-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 25vw" alt="Charcuteries" loading="lazy" decoding="async"><div><b>Charcuteries</b><span>Artisanales, sourcées avec soin.</span></div></article><article class="card reveal"><img src="../img/opt/b-assiettes-1600.jpg" srcset="../img/opt/b-assiettes-800.jpg 800w, ../img/opt/b-assiettes-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 25vw" alt="À partager" loading="lazy" decoding="async"><div><b>À partager</b><span>Pour la table.</span></div></article></div>
+</div></section>
+<section class="extras " id="services"><div class="wrap">
+  <div class="label eyebrow reveal">Plus qu'un bar</div><h2 class="reveal">Le vin sous toutes ses formes</h2>
+  
+  <div class="extras-grid"><figure class="extra reveal"><img src="../img/opt/b-bar-1600.jpg" srcset="../img/opt/b-bar-800.jpg 800w, ../img/opt/b-bar-1600.jpg 1600w" sizes="(max-width:860px) 92vw, 25vw" alt="Côté bar" loading="lazy" decoding="async"><figcaption><h3>Côté bar</h3><p>Des canons rigoureusement sélectionnés, avec des charcuteries artisanales et des fromages de caractère.</p></figcaption></figure><figure class="extra reveal"><img src="../img/opt/b-cave-1600.jpg" srcset="../img/opt/b-cave-800.jpg 800w, ../img/opt/b-cave-1600.jpg 1600w" sizes="(max-width:860px) 92vw, 25vw" alt="Côté cave" loading="lazy" decoding="async"><figcaption><h3>Côté cave</h3><p>Repartez avec la bouteille qui vous a plu, au prix caviste, guidé par Yorel.</p></figcaption></figure><figure class="extra reveal"><img src="../img/opt/b-yorel-1600.jpg" srcset="../img/opt/b-yorel-800.jpg 800w, ../img/opt/b-yorel-1600.jpg 1600w" sizes="(max-width:860px) 92vw, 25vw" alt="Ateliers dégustation" loading="lazy" decoding="async"><figcaption><h3>Ateliers dégustation</h3><p>L'Éveil des sens, Accords mets &amp; vins, Exploration thématique : particuliers ou entreprises.</p></figcaption></figure><figure class="extra reveal"><img src="../img/opt/b-caveau-1600.jpg" srcset="../img/opt/b-caveau-800.jpg 800w, ../img/opt/b-caveau-1600.jpg 1600w" sizes="(max-width:860px) 92vw, 25vw" alt="Le caveau voûté" loading="lazy" decoding="async"><figcaption><h3>Le caveau voûté</h3><p>Notre cave en sous-sol, un écrin de pierre pour vos anniversaires, événements d'entreprise et dégustations privées.</p></figcaption></figure></div>
+</div></section>
+
+<section class="menu-sec" id="carte"><div class="wrap">
+  <h2 class="reveal">La carte</h2><p class="sub reveal">Les magnums à partager, et nos boissons sans alcool.</p>
+  <div class="reveal"><div class="tabs" role="tablist" aria-label="Catégories de la carte">
+    <button class="tab" role="tab" id="t-les-magnums-150-cl" aria-controls="p-les-magnums-150-cl" aria-selected="true" tabindex="0">Les magnums (150 cl)</button><button class="tab" role="tab" id="t-sans-mais-canon" aria-controls="p-sans-mais-canon" aria-selected="false" tabindex="-1">Sans, mais Canon</button><button class="tab" role="tab" id="t-a-partager" aria-controls="p-a-partager" aria-selected="false" tabindex="-1">À partager</button>
+  </div>
+  <div class="tab-panel" role="tabpanel" id="p-les-magnums-150-cl" aria-labelledby="t-les-magnums-150-cl">
+    <div class="panel-grid">
+      <figure class="panel-img"><img src="../img/opt/b-bouteilles-1600.jpg" srcset="../img/opt/b-bouteilles-800.jpg 800w, ../img/opt/b-bouteilles-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 40vw" alt="Les magnums (150 cl)" loading="lazy" decoding="async"></figure>
+      <ul class="items"><li><div class="row"><span class="name">Luberon, dom. de Fontenille</span><span class="dots" aria-hidden="true"></span><span class="price">50,00 €</span></div><p class="desc">Blanc / rouge, 2024 / 2023</p></li><li><div class="row"><span class="name">Luberon, dom. de Fontenille</span><span class="dots" aria-hidden="true"></span><span class="price">45,50 €</span></div><p class="desc">Rosé, 2024</p></li><li><div class="row"><span class="name">Luberon « Alphonse », dom. de Fontenille</span><span class="dots" aria-hidden="true"></span><span class="price">66,50 €</span></div><p class="desc">Blanc / rouge, 2023 / 2022</p></li><li><div class="row"><span class="name">VDF « Primard », dom. de Fontenille</span><span class="dots" aria-hidden="true"></span><span class="price">123,00 €</span></div><p class="desc">Rouge, 2018 / 2019</p></li><li><div class="row"><span class="name">IGP Pays d'Hérault « La cuvée des Cigales », Borie La Vitarèle</span><span class="dots" aria-hidden="true"></span><span class="price">40,00 €</span></div><p class="desc">Rouge, 2024</p></li><li><div class="row"><span class="name">Saint-Chinian « Les Schistes », Borie La Vitarèle</span><span class="dots" aria-hidden="true"></span><span class="price">60,00 €</span></div><p class="desc">Rouge, 2022</p></li><li><div class="row"><span class="name">Saint-Chinian « Les Crès », Borie La Vitarèle</span><span class="dots" aria-hidden="true"></span><span class="price">70,00 €</span></div><p class="desc">Rouge, 2022</p></li><li><div class="row"><span class="name">Corbières Boutenac, ch. Fabre Gasparets</span><span class="dots" aria-hidden="true"></span><span class="price">60,00 €</span></div><p class="desc">Rouge, 2020</p></li></ul>
+    </div>
+  </div><div class="tab-panel" role="tabpanel" id="p-sans-mais-canon" aria-labelledby="t-sans-mais-canon" data-hide>
+    <div class="panel-grid">
+      <figure class="panel-img"><img src="../img/opt/b-orange-1600.jpg" srcset="../img/opt/b-orange-800.jpg 800w, ../img/opt/b-orange-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 40vw" alt="Sans, mais Canon" loading="lazy" decoding="async"></figure>
+      <ul class="items"><li><div class="row"><span class="name">Tonic / sodas Artonic</span><span class="dots" aria-hidden="true"></span><span class="price">5,00 €</span></div><p class="desc">20 cl</p></li><li><div class="row"><span class="name">Ginger beer / ale Artonic</span><span class="dots" aria-hidden="true"></span><span class="price">5,00 €</span></div><p class="desc">20 cl</p></li><li><div class="row"><span class="name">Tonic / sodas Artonic</span><span class="dots" aria-hidden="true"></span><span class="price">9,00 €</span></div><p class="desc">50 cl</p></li><li><div class="row"><span class="name">Ginger beer / ale Artonic</span><span class="dots" aria-hidden="true"></span><span class="price">9,00 €</span></div><p class="desc">50 cl</p></li></ul>
+    </div>
+  </div><div class="tab-panel" role="tabpanel" id="p-a-partager" aria-labelledby="t-a-partager" data-hide>
+    <div class="panel-grid">
+      <figure class="panel-img"><img src="../img/opt/b-planche-1600.jpg" srcset="../img/opt/b-planche-800.jpg 800w, ../img/opt/b-planche-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 40vw" alt="À partager" loading="lazy" decoding="async"></figure>
+      <ul class="items"><li><div class="row"><span class="name">Charcuteries artisanales</span></div><p class="desc">Sourcées avec soin</p></li><li><div class="row"><span class="name">Fromages de caractère</span></div><p class="desc">À partager avec votre verre</p></li><li><div class="row"><span class="name">Au verre</span></div><p class="desc">La sélection change souvent : demandez à Yorel</p></li></ul>
+    </div>
+  </div>
+  <p class="menu-note">Extrait de la carte. La sélection au verre et à la bouteille change souvent.</p></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 class="reveal">Les ateliers dégustation</h2><p class="sub reveal">Particuliers ou entreprises, au comptoir ou dans notre cave voûtée, avec Yorel.</p>
+  <div class="steps"><div class="reveal"><b>L'Éveil des sens</b>Une initiation ludique pour comprendre la philosophie du vivant et apprendre à déguster.</div><div class="reveal"><b>Accords mets &amp; vins</b>L'art de la table à la lyonnaise : nos bouteilles et des produits locaux.</div><div class="reveal"><b>Exploration thématique</b>Chaque mois, un thème : des terroirs de France aux pépites d'Italie et d'Espagne.</div></div>
+</div></section>
+
+<section id="avis" style="padding-top:0"><div class="wrap">
+  <h2 class="reveal">Ils en parlent mieux que nous</h2><p class="sub reveal">5,0/5 sur Google, 71 avis.</p>
+  <div class="reviews"><figure class="reveal"><blockquote>“Une très belle adresse dans le 1er arrondissement de Lyon ! L'accueil est toujours chaleureux, les conseils sont pertinents.”</blockquote><figcaption>Au fil des instants · avis Google</figcaption></figure><figure class="reveal"><blockquote>“The sommelier is super friendly and this place is in a wonderful location, on a lovely green square.”</blockquote><figcaption>Carole P. · avis Google</figcaption></figure></div>
+</div></section>
+
+<section id="infos" style="padding-top:0"><div class="wrap visit">
+  <div class="box reveal">
+    <h3>Horaires</h3><table class="hours" data-hours='{"0":[[1020,1440]],"1":[],"2":[[1020,1440]],"3":[[660,1200]],"4":[[1020,1440]],"5":[[1020,1440]],"6":[[1020,1440]]}'><tr data-days="lundi"><td>Lundi</td><td>Fermé</td></tr><tr data-days="mardi"><td>Mardi</td><td>17:00 – 00:00</td></tr><tr data-days="mercredi"><td>Mercredi</td><td>11:00 – 20:00</td></tr><tr data-days="jeudi – dimanche"><td>Jeudi – Dimanche</td><td>17:00 – 00:00</td></tr></table>
+    <h3>Adresse</h3><p style="margin:0">5 place Fernand Rey<br>69001 Lyon</p>
+    <h3>Contact</h3><p style="margin:0"><a href="tel:+33960037909">09 60 03 79 09</a><br><a href="mailto:lebiodycanon@gmail.com">lebiodycanon@gmail.com</a></p>
+  </div>
+  <div class="map reveal"><iframe title="Plan d'accès Le Biody Canon" loading="lazy" src="https://maps.google.com/maps?q=Le%20Biody%20Canon%2C%205%20place%20Fernand%20Rey%2C%2069001%20Lyon&z=16&output=embed"></iframe></div>
+</div></section>
+</main>
+<footer><div class="wrap">Maquette non publiée · Le Biody Canon · 5 place Fernand Rey, 69001 Lyon</div></footer>
+<p class="demo-note">Démo préparée pour Le Biody Canon par Uimad Studio. Ce n'est pas le site officiel. Photos du Biody Canon (site et fiche Google ; photos professionnelles © Thierry Perre).</p>
+<nav class="actionbar" aria-label="Actions rapides"><a class="main" href="tel:+33960037909">Réserver par téléphone</a><a class="alt" href="mailto:lebiodycanon@gmail.com">Écrire</a><a class="alt" href="https://www.google.com/maps/search/?api=1&query=Le%20Biody%20Canon%2C%205%20place%20Fernand%20Rey%2C%2069001%20Lyon">Itinéraire</a></nav>
+<script>
+document.documentElement.classList.add("js");
+(function () {
+  // mobile menu
+  var root = document.documentElement, btn = document.querySelector(".nav-toggle"), nav = document.getElementById("site-nav");
+  function close() { root.classList.remove("nav-open"); if (btn) btn.setAttribute("aria-expanded", "false"); }
+  if (btn) btn.addEventListener("click", function () { var o = root.classList.toggle("nav-open"); btn.setAttribute("aria-expanded", o ? "true" : "false"); });
+  if (nav) nav.addEventListener("click", function (e) { if (e.target.closest("a")) close(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
+  // header state on scroll
+  var hd = document.querySelector(".site-header");
+  function onScroll() { if (hd) hd.classList.toggle("scrolled", window.scrollY > 40); }
+  window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+  // menu tabs (arrow keys supported)
+  var tabs = [].slice.call(document.querySelectorAll('[role="tab"]'));
+  document.querySelectorAll(".tab-panel[data-hide]").forEach(function (p) { p.hidden = true; });
+  function select(t) { tabs.forEach(function (x) { var on = x === t; x.setAttribute("aria-selected", on); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute("aria-controls")).hidden = !on; }); }
+  tabs.forEach(function (t, i) {
+    t.addEventListener("click", function () { select(t); });
+    t.addEventListener("keydown", function (e) { var d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0; if (d) { var n = tabs[(i + d + tabs.length) % tabs.length]; n.focus(); select(n); } });
+  });
+  // hours: today + open now (Paris time)
+  var tb = document.querySelector(".hours");
+  if (tb) {
+    var H = JSON.parse(tb.getAttribute("data-hours")), now = new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Paris" }));
+    var d = now.getDay(), m = now.getHours() * 60 + now.getMinutes(), names = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+    [].forEach.call(tb.rows, function (r) { var lab = r.getAttribute("data-days").replace(/\s/g, ""), parts = lab.split(/[–-]/), a = names.indexOf(parts[0]), z = names.indexOf(parts[1] || parts[0]);
+      if (a < 0) return; for (var i = a; ; i = (i + 1) % 7) { if (i === d) r.classList.add("today"); if (i === z) break; } });
+    var slots = H[d] || [], open = slots.some(function (s) { return m >= s[0] && m < s[1]; }), next = slots.filter(function (s) { return m < s[0]; })[0];
+    var txt = open ? "Ouvert maintenant" : next ? "Ouvre à " + Math.floor(next[0] / 60) + "h" + String(next[0] % 60).padStart(2, "0") : "Fermé pour aujourd'hui";
+    document.querySelectorAll(".open-badge").forEach(function (el) { el.classList.add(open ? "yes" : "no"); el.querySelector("span").textContent = txt; });
+  }
+  // reveal on scroll
+  var els = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) { var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }); }, { rootMargin: "0px 0px -8% 0px" }); els.forEach(function (el) { io.observe(el); }); }
+  else els.forEach(function (el) { el.classList.add("in"); });
+  // visit counter (Uimad Suivi): demo opened, and from where (?r=email / relance / offre)
+  try { if (/github\.io$|gt\.tc$/.test(location.hostname)) new Image().src = "https://script.google.com/macros/s/AKfycbwT_75Rs8ZV6YeH874yP-UA_grZhIppzJoauUtmGz5oRdehOFW4YrJRW-vXeh3ERiJH/exec" + "?t=visit&id=le-biody-canon-v3&ua=" + encodeURIComponent(new URLSearchParams(location.search).get("r") || "direct"); } catch (e) {}
+})();
+</script>
+</body>
+</html>

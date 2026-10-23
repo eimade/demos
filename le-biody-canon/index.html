@@ -2,158 +2,318 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml"><link rel="icon" href="/favicon.ico?v=2" sizes="48x48"><link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex">
-<title>Le Biody Canon · Lyon 1er</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Mulish:wght@400;500;600;700&display=swap">
+<title>Le Biody Canon · Bar à vin et cave de vins vivants, place Fernand Rey, Lyon 1er</title>
+<meta name="description" content="Bar à vin et cave de vins vivants, place Fernand Rey : des canons choisis par Yorel, notre sommelier, des charcuteries artisanales et des fromages de caractère, et une terrasse toute l'année.">
+<meta property="og:title" content="Le Biody Canon · proposition 1 de votre site">
+<meta property="og:description" content="Une proposition de site préparée pour Le Biody Canon par Uimad Studio.">
+<meta property="og:image" content="https://uimadstudio.github.io/le-biody-canon/email-p1.jpg">
+<meta name="theme-color" content="#f6ece4">
+<link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml"><link rel="icon" href="/favicon.ico?v=2" sizes="48x48"><link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BarOrPub","name":"Le Biody Canon","address":{"@type":"PostalAddress","streetAddress":"5 place Fernand Rey","postalCode":"69001","addressLocality":"Lyon","addressCountry":"FR"},"telephone":"09 60 03 79 09","email":"lebiodycanon@gmail.com","image":"https://uimadstudio.github.io/thumbs/le-biody-canon.jpg","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"17:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Tuesday","opens":"17:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Wednesday","opens":"11:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Thursday","opens":"17:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Friday","opens":"17:00","closes":"00:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"17:00","closes":"00:00"}]}</script>
 <style>
-  :root { --bg:#f8f3ef; --ink:#24161a; --accent:#7d1f35; --soft:#efdfe0; --leaf:#4f6b3a; --paper:#fff;
-          --display:"Cormorant Garamond", Georgia, serif; --body:"Mulish", system-ui, sans-serif; }
-  * { box-sizing:border-box; }
-  html { scroll-behavior:smooth; }
-  body { margin:0; background:var(--bg); color:var(--ink); font:17px/1.65 var(--body); }
-  img { display:block; max-width:100%; }
-  a { color:var(--accent); }
-  .demo { background:var(--ink); color:var(--bg); font-size:13px; text-align:center; padding:7px 16px; }
-  .wrap { max-width:1140px; margin:0 auto; padding-inline:20px; }
-  .top { position:sticky; top:0; z-index:5; background:color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter:blur(8px); border-bottom:1px solid color-mix(in srgb, var(--ink) 10%, transparent); }
-  .top .wrap { display:flex; align-items:center; justify-content:space-between; gap:16px; padding-block:14px; flex-wrap:wrap; }
-  .logo { display:flex; align-items:center; gap:10px; font:600 24px/1 var(--display); color:var(--ink); text-decoration:none; }
-  .logo i { width:34px; height:34px; border-radius:50%; background:var(--accent); display:grid; place-items:center; color:#fff; font:italic 400 17px var(--display); }
-  nav { display:flex; gap:22px; flex-wrap:wrap; align-items:center; }
-  nav a { color:var(--ink); text-decoration:none; font-weight:600; font-size:15px; }
-  nav a.cta { background:var(--accent); color:#fff; padding:8px 16px; border-radius:999px; }
-  .hero { position:relative; min-height:min(82vh,720px); display:grid; align-items:end; color:#fff; overflow:hidden; }
-  .hero img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
-  .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(0,0,0,.62), rgba(0,0,0,.15) 70%), linear-gradient(180deg, transparent 40%, rgba(0,0,0,.55)); }
-  .hero .wrap { position:relative; z-index:1; padding-block:64px; width:100%; }
-  .eyebrow { text-transform:uppercase; letter-spacing:.16em; font-size:13px; font-weight:700; }
-  .hero .eyebrow { color:#fff; opacity:.9; }
-  h1 { font:400 clamp(46px,8vw,96px)/.98 var(--display); margin:10px 0 16px; max-width:12ch; text-wrap:balance; }
-  .hero p { font-size:clamp(17px,2vw,20px); max-width:36em; margin:0 0 26px; }
-  .btn { display:inline-block; background:var(--accent); color:#fff; text-decoration:none; padding:14px 26px; border-radius:999px; font-weight:700; }
-  .btn.ghost { background:rgba(255,255,255,.14); border:1.5px solid rgba(255,255,255,.8); color:#fff; margin-left:8px; }
-  .badges { background:var(--accent); color:#fff; }
-  
-  .badges .wrap { display:flex; flex-wrap:wrap; justify-content:center; gap:10px 34px; padding-block:16px; font-weight:600; font-size:15px; }
-  .badges span::before { content:"✦"; margin-right:10px; color:var(--soft); }
-  section { padding-block:84px; }
-  h2 { font:400 clamp(34px,4.5vw,52px)/1.05 var(--display); margin:0 0 20px; text-wrap:balance; }
-  .story { display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; }
-  .story > * { min-width:0; }
-  .story p { font-size:19px; margin:0 0 16px; }
-  .story img { border-radius:200px 200px 16px 16px; aspect-ratio:4/5; object-fit:cover; width:100%; }
-  .menu { background:var(--paper); }
-  .menu-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:40px; margin-top:12px; }
-  .menu h3 { font:600 14px var(--body); letter-spacing:.14em; text-transform:uppercase; color:var(--leaf); margin:0 0 14px; }
-  .item { padding:14px 0; border-bottom:1px dashed color-mix(in srgb, var(--ink) 22%, transparent); }
-  .item b { font:600 22px var(--display); display:block; }
-  .item span { opacity:.78; font-size:15px; }
-  .menu .small { margin-top:28px; font-size:14px; opacity:.65; }
-  .gallery { display:grid; grid-template-columns:2fr 1fr 1fr; gap:14px; }
-  .gallery img { width:100%; height:340px; object-fit:cover; border-radius:14px; }
-  .visit { background:var(--soft); }
-  .visit-grid { display:grid; grid-template-columns:1fr 1.2fr; gap:40px; align-items:start; }
-  .visit-grid > * { min-width:0; }
-  .info { display:grid; gap:26px; }
-  .info h3 { font:700 13px var(--body); letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 8px; }
-  .info p { margin:0; }
-  table { border-collapse:collapse; width:100%; max-width:360px; }
-  td { padding:4px 0; } td + td { text-align:right; font-variant-numeric:tabular-nums; font-weight:600; }
-  iframe { width:100%; height:420px; border:0; border-radius:16px; }
-  .insta { text-align:center; }
-  .insta p { max-width:34em; margin:0 auto 22px; font-size:18px; }
-  .ph { display:grid; place-items:center; background:repeating-linear-gradient(45deg, var(--soft) 0 14px, color-mix(in srgb, var(--soft) 70%, var(--paper)) 14px 28px); border-radius:14px; height:340px; text-align:center; padding:20px; font:italic 400 22px var(--display); color:var(--ink); }
-  .story .ph { border-radius:200px 200px 16px 16px; aspect-ratio:4/5; height:auto; }
-  .rating { display:inline-flex; gap:8px; align-items:center; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.35); padding:6px 14px; border-radius:999px; font-weight:600; font-size:15px; margin-bottom:18px; }
-  .quotes { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:24px; }
-  .quotes figure { margin:0; background:var(--paper); border-radius:16px; padding:28px; display:grid; gap:14px; align-content:start; }
-  .quotes blockquote { margin:0; font:400 22px/1.4 var(--display); }
-  .quotes figcaption { font-size:14px; opacity:.7; }
-  footer { background:var(--ink); color:var(--bg); padding-block:40px; font-size:14px; }
-  footer .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px 32px; }
-  footer a { color:var(--bg); }
-  footer .credits { opacity:.6; flex-basis:100%; }
-  @media (max-width:820px) {
-    .ph { height:220px; }
-    .story, .visit-grid { grid-template-columns:1fr; }
-    .gallery { grid-template-columns:1fr 1fr; } .gallery img:first-child { grid-column:1 / -1; }
-    .gallery img { height:220px; }
-    nav a:not(.cta) { display:none; }
-    .btn.ghost { margin:10px 0 0; }
+  *,*::before,*::after { box-sizing:border-box; }
+  html { scroll-behavior:smooth; scroll-padding-top:90px; -webkit-text-size-adjust:100%; }
+  body { margin:0; }
+  img { display:block; max-width:100%; height:auto; }
+  a { color:inherit; }
+  .skip { position:absolute; left:-999px; top:8px; z-index:100; background:#000; color:#fff; padding:8px 14px; border-radius:8px; }
+  .skip:focus { left:8px; }
+  :focus-visible { outline:3px solid var(--focus, #1a73e8); outline-offset:3px; }
+  .props { display:flex; flex-wrap:wrap; gap:6px 8px; align-items:center; justify-content:center; padding:7px 12px; font:600 12.5px/1.3 system-ui, sans-serif; background:var(--props-bg); color:var(--props-ink); }
+  .props-t { opacity:.75; margin-inline-end:4px; }
+  .props a, .props b { padding:4px 11px; border-radius:999px; text-decoration:none; }
+  .props a { border:1px solid currentColor; opacity:.85; } .props a:hover { opacity:1; }
+  .props b { background:var(--props-on); color:#fff; }
+  .demo-note { font:12px/1.4 system-ui, sans-serif; text-align:center; padding:10px 16px 90px; opacity:.6; margin:0; }
+  /* navigation */
+  .nav-toggle { display:none; width:46px; height:46px; border:0; background:transparent; border-radius:12px; cursor:pointer; position:relative; color:inherit; }
+  .nav-toggle span { position:absolute; left:12px; right:12px; height:2px; background:currentColor; border-radius:2px; transition:transform .3s, opacity .2s, top .3s; }
+  .nav-toggle span:nth-child(1) { top:16px; } .nav-toggle span:nth-child(2) { top:22px; } .nav-toggle span:nth-child(3) { top:28px; }
+  .nav-open .nav-toggle span:nth-child(1) { top:22px; transform:rotate(45deg); }
+  .nav-open .nav-toggle span:nth-child(2) { opacity:0; }
+  .nav-open .nav-toggle span:nth-child(3) { top:22px; transform:rotate(-45deg); }
+  /* menu tabs (la carte) */
+  .tabs { display:flex; flex-wrap:wrap; gap:8px; }
+  .tab-panel[hidden] { display:none; }
+  .js .tab-panel { animation:panelIn .45s ease both; }
+  @keyframes panelIn { from { opacity:0; transform:translateY(8px); } }
+  .row { display:flex; align-items:baseline; gap:10px; }
+  .row .name { font-weight:600; }
+  .row .dots { flex:1; border-bottom:2px dotted var(--dots, rgba(0,0,0,.25)); transform:translateY(-4px); min-width:20px; }
+  .row .price { white-space:nowrap; font-variant-numeric:tabular-nums; font-weight:700; }
+  .desc { margin:4px 0 0; font-size:.9em; opacity:.72; }
+  /* hours */
+  .hours { width:100%; border-collapse:collapse; }
+  .hours td { padding:9px 0; border-bottom:1px solid var(--line); }
+  .hours td + td { text-align:right; font-variant-numeric:tabular-nums; }
+  .hours tr.today td { font-weight:700; color:var(--accent); }
+  .open-badge { display:inline-flex; align-items:center; gap:8px; font:600 13px/1 system-ui, sans-serif; padding:7px 12px; border-radius:999px; background:var(--badge-bg, #fff); color:var(--badge-ink, #222); }
+  .open-badge i { width:8px; height:8px; border-radius:50%; background:#999; }
+  .open-badge.yes i { background:#1fa463; box-shadow:0 0 0 4px rgba(31,164,99,.2); } .open-badge.no i { background:#d9534f; }
+  /* reveal */
+  .js .reveal { opacity:0; transform:translateY(22px); transition:opacity .8s cubic-bezier(.2,.7,.2,1), transform .8s cubic-bezier(.2,.7,.2,1); }
+  .js .reveal.in { opacity:1; transform:none; }
+  /* mobile action bar */
+  .actionbar { position:fixed; left:0; right:0; bottom:0; z-index:40; display:none; gap:8px; padding:10px 12px calc(10px + env(safe-area-inset-bottom)); background:var(--bar-bg); box-shadow:0 -6px 24px rgba(0,0,0,.1); }
+  .actionbar a { flex:1; text-align:center; padding:13px 8px; border-radius:12px; font:700 15px/1 system-ui, sans-serif; text-decoration:none; }
+  .actionbar a.main { background:var(--accent); color:#fff; flex:1.3; } .actionbar a.alt { border:1.5px solid currentColor; }
+  @media (max-width:860px) { .actionbar { display:flex; } }
+  @media (prefers-reduced-motion:reduce) { *,*::before,*::after { animation:none!important; transition:none!important; } html { scroll-behavior:auto; } .js .reveal { opacity:1; transform:none; } }
+
+  :root { --bg:#f6ece4; --paper:#fff8f2; --ink:#2b1117; --accent:#b5603f; --muted:#6e5652; --line:#ead7c9; --dots:#d3b3a3;
+          --props-bg:#2b1117; --props-ink:#f6ece4; --props-on:#b5603f; --bar-bg:#fff8f2; --focus:#b5603f; }
+  body { background:var(--bg); color:var(--ink); font:400 17px/1.7 "Lora", Georgia, serif; }
+  .wrap { max-width:1160px; margin:0 auto; padding-inline:clamp(18px,4vw,40px); }
+  .site-header { position:sticky; top:0; z-index:30; background:color-mix(in srgb, var(--bg) 94%, transparent); backdrop-filter:blur(10px); border-bottom:1px solid transparent; transition:border-color .3s, box-shadow .3s; }
+  .site-header.scrolled { border-color:var(--line); box-shadow:0 6px 24px rgba(0,0,0,.05); }
+  .bar { display:flex; align-items:center; justify-content:space-between; gap:20px; padding-block:14px; }
+  .brand { display:flex; align-items:center; gap:12px; text-decoration:none; }
+  .brand .mono { width:44px; height:44px; border-radius:50%; border:1.5px solid var(--accent); display:grid; place-items:center; font:italic 600 21px "Playfair Display", serif; color:var(--accent); }
+  .brand b { font:600 24px/1 "Playfair Display", serif; letter-spacing:.01em; }
+  .brand small { display:block; font:500 11px "Lora", serif; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); margin-top:4px; }
+  #site-nav { display:flex; align-items:center; gap:30px; }
+  #site-nav ul { list-style:none; margin:0; padding:0; display:flex; gap:26px; }
+  #site-nav a { text-decoration:none; font:500 15px "Lora", serif; position:relative; }
+  #site-nav ul a::after { content:""; position:absolute; left:0; right:0; bottom:-5px; height:1.5px; background:var(--accent); transform:scaleX(0); transform-origin:left; transition:transform .3s; }
+  #site-nav ul a:hover::after { transform:scaleX(1); }
+  .cta { display:inline-flex; align-items:center; gap:8px; background:var(--accent); color:#fff !important; padding:12px 22px; border-radius:999px; font:600 15px "Lora", serif; text-decoration:none; transition:transform .2s, box-shadow .2s; }
+  .cta:hover { transform:translateY(-2px); box-shadow:0 10px 24px color-mix(in srgb, var(--accent) 35%, transparent); }
+  .cta.ghost { background:transparent; color:var(--ink) !important; border:1.5px solid var(--ink); }
+  .hero { display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(30px,6vw,80px); align-items:center; padding-block:clamp(40px,7vw,90px); }
+  .eyebrow { font:600 12.5px "Lora", serif; letter-spacing:.24em; text-transform:uppercase; color:var(--accent); display:flex; align-items:center; gap:14px; }
+  .eyebrow::before { content:""; width:34px; height:1.5px; background:currentColor; }
+  h1 { font:500 clamp(48px,7vw,88px)/1.02 "Playfair Display", serif; margin:18px 0 20px; letter-spacing:-.01em; }
+  h1 em { color:var(--accent); }
+  .lead { font-size:clamp(18px,1.6vw,20px); color:var(--muted); max-width:32em; margin:0 0 28px; }
+  .hero-ctas { display:flex; flex-wrap:wrap; gap:12px; margin-bottom:26px; }
+  .meta { display:flex; flex-wrap:wrap; gap:12px 22px; align-items:center; font-size:15px; color:var(--muted); }
+  .stars { color:#c8962d; letter-spacing:2px; }
+  .arch { position:relative; }
+  .arch img { width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:999px 999px 18px 18px; box-shadow:0 30px 60px -30px rgba(0,0,0,.45); }
+  .arch .seal { position:absolute; left:-18px; bottom:40px; background:var(--paper); border:1px solid var(--line); border-radius:16px; padding:14px 18px; box-shadow:0 14px 34px rgba(0,0,0,.12); font-size:14px; }
+  .arch .seal b { display:block; font:600 20px "Playfair Display", serif; }
+  section { padding-block:clamp(70px,9vw,120px); }
+  .ornament { display:flex; align-items:center; justify-content:center; gap:14px; color:var(--accent); margin-bottom:14px; }
+  .ornament::before, .ornament::after { content:""; width:60px; height:1px; background:currentColor; opacity:.5; }
+  h2 { font:500 clamp(36px,5vw,58px)/1.08 "Playfair Display", serif; margin:0 0 16px; text-align:center; }
+  .sub { text-align:center; color:var(--muted); max-width:38em; margin:0 auto 46px; }
+  .story { background:var(--paper); }
+  .story-grid { display:grid; grid-template-columns:1fr 1fr; gap:clamp(30px,6vw,80px); align-items:center; }
+  .story-grid img { border-radius:18px; aspect-ratio:5/4; object-fit:cover; width:100%; }
+  .story-grid h2 { text-align:left; }
+  .story-grid p { margin:0 0 18px; }
+  .facts { list-style:none; padding:0; margin:22px 0 0; display:grid; grid-template-columns:1fr 1fr; gap:12px 20px; }
+  .facts li { padding-left:26px; position:relative; font-size:15.5px; }
+  .facts li::before { content:"✦"; position:absolute; left:0; color:var(--accent); }
+  /* la carte: printed menu card */
+  .card-menu { background:var(--paper); border:1px solid var(--line); border-radius:22px; padding:clamp(22px,4vw,50px); box-shadow:0 30px 70px -40px rgba(0,0,0,.35); position:relative; }
+  .card-menu::before { content:""; position:absolute; inset:10px; border:1px solid var(--line); border-radius:16px; pointer-events:none; }
+  .card-menu .tabs { justify-content:center; margin-bottom:34px; position:relative; }
+  .tab { background:none; border:0; padding:8px 4px; margin:0 12px; font:600 13px "Lora", serif; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); cursor:pointer; border-bottom:2px solid transparent; }
+  .tab[aria-selected="true"] { color:var(--ink); border-color:var(--accent); }
+  .panel-grid { display:grid; grid-template-columns:.8fr 1.2fr; gap:clamp(24px,4vw,50px); align-items:start; position:relative; }
+  .panel-grid.no-img { grid-template-columns:1fr; max-width:720px; margin:0 auto; }
+  .panel-img { margin:0; } .panel-img img { border-radius:999px 999px 14px 14px; aspect-ratio:3/4; object-fit:cover; width:100%; }
+  .items { list-style:none; margin:0; padding:0; display:grid; gap:20px; }
+  .row .name { font:600 19px "Playfair Display", serif; }
+  .row .price { font:600 18px "Playfair Display", serif; color:var(--accent); }
+  .row .price.tag { font:italic 500 14px "Lora", serif; color:var(--muted); }
+  .menu-note { text-align:center; color:var(--muted); font-style:italic; font-size:14.5px; margin:30px 0 0; position:relative; }
+  .gallery { display:grid; grid-template-columns:1.3fr 1fr 1fr; grid-auto-rows:240px; gap:14px; }
+  .gallery figure { margin:0; overflow:hidden; border-radius:16px; }
+  .gallery figure:first-child { grid-row:span 2; }
+  .gallery img { width:100%; height:100%; object-fit:cover; transition:transform 1.2s cubic-bezier(.2,.7,.2,1); }
+  .gallery figure:hover img { transform:scale(1.05); }
+  .quotes { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:24px; }
+  .quotes figure { margin:0; background:var(--paper); border:1px solid var(--line); border-radius:20px; padding:34px; }
+  .quotes blockquote { margin:0 0 16px; font:italic 400 21px/1.55 "Playfair Display", serif; }
+  .quotes figcaption { font-size:14px; color:var(--muted); }
+  .infos { background:var(--paper); }
+  .info-grid { display:grid; grid-template-columns:.9fr 1.1fr; gap:clamp(30px,5vw,60px); align-items:stretch; }
+  .info-grid h3 { font:600 13px "Lora", serif; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); margin:26px 0 10px; }
+  .info-grid h3:first-of-type { margin-top:0; }
+  .map { border-radius:20px; overflow:hidden; min-height:420px; border:1px solid var(--line); }
+  .map iframe { width:100%; height:100%; min-height:420px; border:0; display:block; }
+  footer { padding:40px 0; font-size:14px; color:var(--muted); border-top:1px solid var(--line); }
+  footer .wrap { display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px 30px; }
+  @media (max-width:860px) {
+    .site-header { backdrop-filter:none; background:var(--bg); } /* a backdrop-filter would trap the fixed menu panel inside the header */
+    .nav-toggle { display:block; }
+    #site-nav { position:fixed; inset:0 0 0 auto; height:100dvh; width:min(86vw,360px); flex-direction:column; align-items:stretch; gap:26px; padding:100px 28px 30px; background:var(--paper); box-shadow:-20px 0 60px rgba(0,0,0,.15); transform:translateX(105%); transition:transform .35s cubic-bezier(.2,.7,.2,1); z-index:29; }
+    .nav-open #site-nav { transform:none; }
+    #site-nav ul { flex-direction:column; gap:20px; } #site-nav ul a { font-size:20px; }
+    .nav-toggle { z-index:31; }
+    .hero, .story-grid, .panel-grid, .info-grid { grid-template-columns:1fr; }
+    .arch { max-width:420px; margin:0 auto; } .arch .seal { left:10px; }
+    .gallery { grid-template-columns:1fr 1fr; grid-auto-rows:180px; } .gallery figure:first-child { grid-column:span 2; grid-row:auto; }
+    .facts { grid-template-columns:1fr; }
+    .panel-img img { aspect-ratio:16/10; border-radius:16px; }
   }
+  /* services (b.extras) */
+  .extras-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .extra { margin:0; }
+  .extra img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--ex-radius,16px); }
+  .extra h3 { margin:16px 0 6px; font-size:20px; }
+  .extra p { margin:0; opacity:.8; font-size:.95em; }
+  .brand-logo { height:var(--logo-h,48px); width:auto; display:block; }
+
+  .site-header .brand-logo { --logo-h:54px; }
+  .eyebrow { color:#b5603f; }
+  .hero h1 { color:#2b1117; }
+  .arch img { border-radius:20px; aspect-ratio:5/4; }
+  .arch { align-self:stretch; display:flex; align-items:center; }
+  .card-menu { background:#2b1117; color:#f6e4d8; border-color:#2b1117; }
+  .card-menu::before { border-color:rgba(227,164,135,.35); }
+  .card-menu .row .name { color:#fff; } .card-menu .row .price { color:#e3a487; } .card-menu .desc { color:#e9d2c4; opacity:.85; }
+  .card-menu .tab { color:#cfa996; } .card-menu .tab[aria-selected="true"] { color:#fff; border-color:#e3a487; }
+  .card-menu .menu-note { color:#d9b8a6; } .card-menu .row .dots { border-color:rgba(227,164,135,.35); }
+  .extras { background:#2b1117; color:#f6e4d8; } .extras h2 { color:#fff; } .extras .eyebrow { justify-content:center; color:#e3a487; }
+  .extras .extra h3 { font:500 22px "Playfair Display", serif; color:#fff; } .extras .extra img { border-radius:12px; }
 </style>
 </head>
 <body>
-<div class="demo">Site de démonstration préparé pour Le Biody Canon par Uimad Studio. Ce n'est pas le site officiel.</div>
-
-<header class="top"><div class="wrap">
-  <a class="logo" href="#"><i>L</i>Le Biody Canon</a>
-  <nav><a href="#about">À propos</a><a href="#menu">La carte</a><a href="#visit">Infos</a><a class="cta" href="#visit">Nous trouver</a></nav>
+<a class="skip" href="#carte">Aller à la carte</a>
+<div class="props" role="navigation" aria-label="Propositions de site">
+  <span class="props-t">Le Biody Canon · choisissez votre site</span>
+  <b aria-current="page">Proposition 1</b><a href="v2/">Proposition 2</a><a href="v3/">Proposition 3</a>
+</div>
+<header class="site-header"><div class="wrap bar">
+  <a class="brand" href="#top"><img class="brand-logo" src="img/logo-2b1117.png" alt="Le Biody Canon"></a>
+  <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+  <nav id="site-nav" aria-label="Navigation principale">
+    <ul>
+        <li><a href="#carte">La carte</a></li>
+        <li><a href="#maison">La maison</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#infos">Infos & accès</a></li>
+      </ul>
+    <a class="cta" href="tel:+33960037909">Réserver par téléphone</a>
+  </nav>
 </div></header>
 
-<section class="hero" style="padding:0">
-  <img src="img/hero.jpg" alt="Verre de vin rouge">
-  <div class="wrap">
-    <div class="rating">★ 5,0 sur Google · 70 avis</div>
-    <div class="eyebrow">Bar à vin, place Fernand Rey, Lyon 1er</div>
-    <h1>Le Biody Canon</h1>
-    <p>Vins choisis par un sommelier passionné, planches de charcuterie et de fromage, sur une jolie place verte. Noté 5,0 sur Google.</p>
-    <a class="btn" href="#menu">Voir la carte</a><a class="btn ghost" href="tel:0960037909">Appeler le 09 60 03 79 09</a>
+<main id="top">
+<section class="wrap hero" style="padding-top:clamp(30px,5vw,70px)">
+  <div class="reveal">
+    <div class="eyebrow">Lyon 1er · Bar à vin · Cave · Ateliers</div>
+    <h1>Le vin <em>vivant</em>, place Fernand Rey</h1>
+    <p class="lead">Bar à vin et cave de vins vivants, place Fernand Rey : des canons choisis par Yorel, notre sommelier, des charcuteries artisanales et des fromages de caractère, et une terrasse toute l'année.</p>
+    <div class="hero-ctas"><a class="cta" href="#carte">Découvrir la carte</a><a class="cta ghost" href="https://www.google.com/maps/search/?api=1&query=Le%20Biody%20Canon%2C%205%20place%20Fernand%20Rey%2C%2069001%20Lyon">Itinéraire</a></div>
+    <div class="meta"><span><span class="stars" aria-hidden="true">★★★★★</span> 5,0/5 · 71 avis Google</span><span class="open-badge" style="--badge-bg:var(--paper)"><i></i><span>Horaires</span></span></div>
   </div>
+  <div class="arch reveal"><img src="img/opt/b-salle-1600.jpg" srcset="img/opt/b-salle-800.jpg 800w, img/opt/b-salle-1600.jpg 1600w" sizes="(max-width:860px) 90vw, 45vw" alt="La salle du Biody Canon" fetchpriority="high" decoding="async">
+    <div class="seal"><b>5 place Fernand Rey</b>69001 Lyon</div></div>
 </section>
 
-<div class="badges"><div class="wrap"><span>5,0 ★ sur Google</span><span>Conseils du sommelier</span><span>Planches</span><span>Sur une place verte</span></div></div>
-
-<section id="about"><div class="wrap story">
-  <div>
-    <div class="eyebrow" style="color:var(--leaf)">Notre histoire</div>
-    <h2>Bienvenue chez Le Biody Canon</h2>
-    <p>Le Biody Canon est un bar à vin du 1er arrondissement, sur la place Fernand Rey. Un accueil chaleureux, des conseils pertinents et une sélection de vins à partager autour d'une planche.</p>
-    <p><a href="#visit">Horaires et accès →</a></p>
+<section class="story" id="maison"><div class="wrap story-grid">
+  <div class="reveal"><img src="img/opt/b-terrasse-1600.jpg" srcset="img/opt/b-terrasse-800.jpg 800w, img/opt/b-terrasse-1600.jpg 1600w" sizes="(max-width:860px) 100vw, 50vw" alt="La terrasse, place Fernand Rey" loading="lazy" decoding="async"></div>
+  <div class="reveal">
+    <div class="eyebrow">La maison</div>
+    <h2>Une philosophie du vivant</h2>
+    <p>Le Biody Canon est né d'une envie simple : réconcilier le bon, le vrai et le vivant. Ici, on ne se contente pas de servir du vin : on partage des histoires de terroirs et les visages des vignerons et vigneronnes qui les façonnent. Notre mission : vous faire découvrir votre prochaine pépite.</p>
+    <ul class="facts"><li>Vins vivants, bières artisanales, cidres</li><li>Cave à emporter au prix caviste</li><li>Ateliers dégustation</li><li>Terrasse toute l'année</li></ul>
   </div>
-  <img src="img/charcuterie.jpg" alt="Planche de charcuterie">
+</div></section>
+<section class="extras " id="services"><div class="wrap">
+  <div class="label eyebrow reveal">Plus qu'un bar</div><h2 class="reveal">Le vin sous toutes ses formes</h2>
+  
+  <div class="extras-grid"><figure class="extra reveal"><img src="img/opt/b-bar-1600.jpg" srcset="img/opt/b-bar-800.jpg 800w, img/opt/b-bar-1600.jpg 1600w" sizes="(max-width:860px) 92vw, 25vw" alt="Côté bar" loading="lazy" decoding="async"><figcaption><h3>Côté bar</h3><p>Des canons rigoureusement sélectionnés, avec des charcuteries artisanales et des fromages de caractère.</p></figcaption></figure><figure class="extra reveal"><img src="img/opt/b-cave-1600.jpg" srcset="img/opt/b-cave-800.jpg 800w, img/opt/b-cave-1600.jpg 1600w" sizes="(max-width:860px) 92vw, 25vw" alt="Côté cave" loading="lazy" decoding="async"><figcaption><h3>Côté cave</h3><p>Repartez avec la bouteille qui vous a plu, au prix caviste, guidé par Yorel.</p></figcaption></figure><figure class="extra reveal"><img src="img/opt/b-yorel-1600.jpg" srcset="img/opt/b-yorel-800.jpg 800w, img/opt/b-yorel-1600.jpg 1600w" sizes="(max-width:860px) 92vw, 25vw" alt="Ateliers dégustation" loading="lazy" decoding="async"><figcaption><h3>Ateliers dégustation</h3><p>L'Éveil des sens, Accords mets &amp; vins, Exploration thématique : particuliers ou entreprises.</p></figcaption></figure><figure class="extra reveal"><img src="img/opt/b-caveau-1600.jpg" srcset="img/opt/b-caveau-800.jpg 800w, img/opt/b-caveau-1600.jpg 1600w" sizes="(max-width:860px) 92vw, 25vw" alt="Le caveau voûté" loading="lazy" decoding="async"><figcaption><h3>Le caveau voûté</h3><p>Notre cave en sous-sol, un écrin de pierre pour vos anniversaires, événements d'entreprise et dégustations privées.</p></figcaption></figure></div>
 </div></section>
 
-<section class="menu" id="menu"><div class="wrap">
-  <div class="eyebrow" style="color:var(--leaf)">Ce que nous proposons</div>
-  <h2>Au comptoir</h2>
-  <div class="menu-grid">
-    <div><h3>Les vins</h3><div class="item"><b>Au verre et à la bouteille</b><span>Une sélection qui change souvent.</span></div><div class="item"><b>Conseils</b><span>Notre sommelier vous guide.</span></div></div>
-    <div><h3>À partager</h3><div class="item"><b>Planche de charcuterie</b><span>Pour l'apéro.</span></div><div class="item"><b>Fromages &amp; houmous</b><span>Pour accompagner votre verre.</span></div></div>
+<section id="carte"><div class="wrap">
+  <div class="ornament reveal">✦</div>
+  <h2 class="reveal">La carte</h2>
+  <p class="sub reveal">Un extrait de la carte : les magnums à partager, et nos boissons sans alcool.</p>
+  <div class="card-menu reveal"><div class="tabs" role="tablist" aria-label="Catégories de la carte">
+    <button class="tab" role="tab" id="t-les-magnums-150-cl" aria-controls="p-les-magnums-150-cl" aria-selected="true" tabindex="0">Les magnums (150 cl)</button><button class="tab" role="tab" id="t-sans-mais-canon" aria-controls="p-sans-mais-canon" aria-selected="false" tabindex="-1">Sans, mais Canon</button><button class="tab" role="tab" id="t-a-partager" aria-controls="p-a-partager" aria-selected="false" tabindex="-1">À partager</button>
   </div>
-  <p class="small">Aperçu seulement. Votre carte complète avec les prix ira ici.</p>
-</div></section>
-
-<section id="reviews"><div class="wrap">
-  <div class="eyebrow" style="color:var(--leaf)">Avis Google</div>
-  <h2>Ce qu'en disent nos clients</h2>
-  <div class="quotes"><figure><blockquote>“Une très belle adresse dans le 1er arrondissement de Lyon ! L'accueil est toujours chaleureux, les conseils sont pertinents.”</blockquote><figcaption>Au fil des instants, avis Google</figcaption></figure><figure><blockquote>“The sommelier is super friendly and this place is in a wonderful location, on a lovely green square.”</blockquote><figcaption>Carole P., avis Google</figcaption></figure></div>
-</div></section>
-
-<section style="padding-block:14px 84px;background:var(--paper)"><div class="wrap gallery" style="grid-template-columns:1.6fr 1fr">
-  <img src="img/hero.jpg" alt="Verre de vin rouge"><img src="img/wine.jpg" alt="Vin rouge">
-</div></section>
-
-<section class="visit" id="visit"><div class="wrap visit-grid">
-  <div class="info">
-    <div><div class="eyebrow" style="color:var(--leaf)">Venez nous voir</div><h2 style="margin-top:8px">Infos</h2></div>
-    <div><h3>Horaires</h3><table><tr><td>Ouverture</td><td>À partir de 17:00</td></tr><tr><td>Horaires détaillés</td><td>À compléter avec vous</td></tr></table></div>
-    <div><h3>Adresse</h3><p>5 place Fernand Rey<br>69001 Lyon</p></div>
-    <div><h3>Contact</h3><p>09 60 03 79 09<br><a href="mailto:lebiodycanon@gmail.com">lebiodycanon@gmail.com</a></p></div>
-    <p style="opacity:.8">Sur la place Fernand Rey, dans le 1er arrondissement.</p>
+  <div class="tab-panel" role="tabpanel" id="p-les-magnums-150-cl" aria-labelledby="t-les-magnums-150-cl">
+    <div class="panel-grid">
+      <figure class="panel-img"><img src="img/opt/b-bouteilles-1600.jpg" srcset="img/opt/b-bouteilles-800.jpg 800w, img/opt/b-bouteilles-1600.jpg 1600w" sizes="(max-width:860px) 100vw, 40vw" alt="Les magnums (150 cl)" loading="lazy" decoding="async"></figure>
+      <ul class="items"><li><div class="row"><span class="name">Luberon, dom. de Fontenille</span><span class="dots" aria-hidden="true"></span><span class="price">50,00 €</span></div><p class="desc">Blanc / rouge, 2024 / 2023</p></li><li><div class="row"><span class="name">Luberon, dom. de Fontenille</span><span class="dots" aria-hidden="true"></span><span class="price">45,50 €</span></div><p class="desc">Rosé, 2024</p></li><li><div class="row"><span class="name">Luberon « Alphonse », dom. de Fontenille</span><span class="dots" aria-hidden="true"></span><span class="price">66,50 €</span></div><p class="desc">Blanc / rouge, 2023 / 2022</p></li><li><div class="row"><span class="name">VDF « Primard », dom. de Fontenille</span><span class="dots" aria-hidden="true"></span><span class="price">123,00 €</span></div><p class="desc">Rouge, 2018 / 2019</p></li><li><div class="row"><span class="name">IGP Pays d'Hérault « La cuvée des Cigales », Borie La Vitarèle</span><span class="dots" aria-hidden="true"></span><span class="price">40,00 €</span></div><p class="desc">Rouge, 2024</p></li><li><div class="row"><span class="name">Saint-Chinian « Les Schistes », Borie La Vitarèle</span><span class="dots" aria-hidden="true"></span><span class="price">60,00 €</span></div><p class="desc">Rouge, 2022</p></li><li><div class="row"><span class="name">Saint-Chinian « Les Crès », Borie La Vitarèle</span><span class="dots" aria-hidden="true"></span><span class="price">70,00 €</span></div><p class="desc">Rouge, 2022</p></li><li><div class="row"><span class="name">Corbières Boutenac, ch. Fabre Gasparets</span><span class="dots" aria-hidden="true"></span><span class="price">60,00 €</span></div><p class="desc">Rouge, 2020</p></li></ul>
+    </div>
+  </div><div class="tab-panel" role="tabpanel" id="p-sans-mais-canon" aria-labelledby="t-sans-mais-canon" data-hide>
+    <div class="panel-grid">
+      <figure class="panel-img"><img src="img/opt/b-orange-1600.jpg" srcset="img/opt/b-orange-800.jpg 800w, img/opt/b-orange-1600.jpg 1600w" sizes="(max-width:860px) 100vw, 40vw" alt="Sans, mais Canon" loading="lazy" decoding="async"></figure>
+      <ul class="items"><li><div class="row"><span class="name">Tonic / sodas Artonic</span><span class="dots" aria-hidden="true"></span><span class="price">5,00 €</span></div><p class="desc">20 cl</p></li><li><div class="row"><span class="name">Ginger beer / ale Artonic</span><span class="dots" aria-hidden="true"></span><span class="price">5,00 €</span></div><p class="desc">20 cl</p></li><li><div class="row"><span class="name">Tonic / sodas Artonic</span><span class="dots" aria-hidden="true"></span><span class="price">9,00 €</span></div><p class="desc">50 cl</p></li><li><div class="row"><span class="name">Ginger beer / ale Artonic</span><span class="dots" aria-hidden="true"></span><span class="price">9,00 €</span></div><p class="desc">50 cl</p></li></ul>
+    </div>
+  </div><div class="tab-panel" role="tabpanel" id="p-a-partager" aria-labelledby="t-a-partager" data-hide>
+    <div class="panel-grid">
+      <figure class="panel-img"><img src="img/opt/b-planche-1600.jpg" srcset="img/opt/b-planche-800.jpg 800w, img/opt/b-planche-1600.jpg 1600w" sizes="(max-width:860px) 100vw, 40vw" alt="À partager" loading="lazy" decoding="async"></figure>
+      <ul class="items"><li><div class="row"><span class="name">Charcuteries artisanales</span></div><p class="desc">Sourcées avec soin</p></li><li><div class="row"><span class="name">Fromages de caractère</span></div><p class="desc">À partager avec votre verre</p></li><li><div class="row"><span class="name">Au verre</span></div><p class="desc">La sélection change souvent : demandez à Yorel</p></li></ul>
+    </div>
   </div>
-  <iframe title="Plan d'accès : Le Biody Canon" src="https://maps.google.com/maps?q=Le%20Biody%20Canon%2C%205%20place%20Fernand%20Rey%2C%2069001%20Lyon&z=16&output=embed"></iframe>
+  <p class="menu-note">Extrait de la carte. La sélection au verre et à la bouteille change souvent.</p></div>
 </div></section>
 
+<section style="padding-top:0"><div class="wrap gallery">
+  <figure class="reveal"><img src="img/opt/b-salle-1600.jpg" srcset="img/opt/b-salle-800.jpg 800w, img/opt/b-salle-1600.jpg 1600w" sizes="(max-width:860px) 50vw, 33vw" alt="La salle" loading="lazy" decoding="async"></figure><figure class="reveal"><img src="img/opt/b-assiettes-1600.jpg" srcset="img/opt/b-assiettes-800.jpg 800w, img/opt/b-assiettes-1600.jpg 1600w" sizes="(max-width:860px) 50vw, 33vw" alt="Assiettes à partager" loading="lazy" decoding="async"></figure><figure class="reveal"><img src="img/opt/b-selection-1600.jpg" srcset="img/opt/b-selection-800.jpg 800w, img/opt/b-selection-1600.jpg 1600w" sizes="(max-width:860px) 50vw, 33vw" alt="La sélection" loading="lazy" decoding="async"></figure><figure class="reveal"><img src="img/opt/b-terrasse-1600.jpg" srcset="img/opt/b-terrasse-800.jpg 800w, img/opt/b-terrasse-1600.jpg 1600w" sizes="(max-width:860px) 50vw, 33vw" alt="La terrasse" loading="lazy" decoding="async"></figure><figure class="reveal"><img src="img/opt/b-caveau-1600.jpg" srcset="img/opt/b-caveau-800.jpg 800w, img/opt/b-caveau-1600.jpg 1600w" sizes="(max-width:860px) 50vw, 33vw" alt="Le caveau voûté" loading="lazy" decoding="async"></figure>
+</div></section>
 
+<section id="avis" style="padding-top:0"><div class="wrap">
+  <div class="ornament reveal">✦</div><h2 class="reveal">Ce que disent nos clients</h2>
+  <p class="sub reveal">5,0/5 sur Google, 71 avis.</p>
+  <div class="quotes"><figure class="reveal"><blockquote>“Une très belle adresse dans le 1er arrondissement de Lyon ! L'accueil est toujours chaleureux, les conseils sont pertinents.”</blockquote><figcaption>Au fil des instants · avis Google</figcaption></figure><figure class="reveal"><blockquote>“The sommelier is super friendly and this place is in a wonderful location, on a lovely green square.”</blockquote><figcaption>Carole P. · avis Google</figcaption></figure></div>
+</div></section>
 
-<footer><div class="wrap">
-  <span>© 2026 Le Biody Canon · 5 place Fernand Rey, 69001 Lyon</span>
-  <span>Maquette Uimad Studio pour votre propre nom de domaine</span>
-  <span class="credits">Photos d'illustration, à remplacer par les vôtres : Paolo Neo (domaine public), Binibinipicnic (CC0), Jon Sullivan (domaine public), via Wikimedia Commons.</span>
-</div></footer>
-<script>try{if(/github.io$|gt.tc$/.test(location.hostname))new Image().src="https://script.google.com/macros/s/AKfycbwT_75Rs8ZV6YeH874yP-UA_grZhIppzJoauUtmGz5oRdehOFW4YrJRW-vXeh3ERiJH/exec"+"?t=visit&id=le-biody-canon&ua="+encodeURIComponent(new URLSearchParams(location.search).get("r")||"direct")}catch(e){}</script>
+<section class="infos" id="infos"><div class="wrap info-grid">
+  <div class="reveal">
+    <h2 style="text-align:left">Infos & accès</h2>
+    <p><span class="open-badge" style="--badge-bg:var(--bg)"><i></i><span>Horaires</span></span></p>
+    <h3>Horaires</h3><table class="hours" data-hours='{"0":[[1020,1440]],"1":[],"2":[[1020,1440]],"3":[[660,1200]],"4":[[1020,1440]],"5":[[1020,1440]],"6":[[1020,1440]]}'><tr data-days="lundi"><td>Lundi</td><td>Fermé</td></tr><tr data-days="mardi"><td>Mardi</td><td>17:00 – 00:00</td></tr><tr data-days="mercredi"><td>Mercredi</td><td>11:00 – 20:00</td></tr><tr data-days="jeudi – dimanche"><td>Jeudi – Dimanche</td><td>17:00 – 00:00</td></tr></table>
+    <h3>Adresse</h3><p style="margin:0">5 place Fernand Rey<br>69001 Lyon</p>
+    <h3>Contact</h3><p style="margin:0"><a href="tel:+33960037909">09 60 03 79 09</a><br><a href="mailto:lebiodycanon@gmail.com">lebiodycanon@gmail.com</a></p>
+    <p style="margin-top:26px"><a class="cta" href="https://www.google.com/maps/search/?api=1&query=Le%20Biody%20Canon%2C%205%20place%20Fernand%20Rey%2C%2069001%20Lyon">Itinéraire</a></p>
+  </div>
+  <div class="map reveal"><iframe title="Plan d'accès Le Biody Canon" loading="lazy" src="https://maps.google.com/maps?q=Le%20Biody%20Canon%2C%205%20place%20Fernand%20Rey%2C%2069001%20Lyon&z=16&output=embed"></iframe></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>Maquette non publiée · Le Biody Canon · 5 place Fernand Rey, 69001 Lyon</span><span><a href="tel:+33960037909">09 60 03 79 09</a></span></div></footer>
+<p class="demo-note">Démo préparée pour Le Biody Canon par Uimad Studio. Ce n'est pas le site officiel. Photos du Biody Canon (site et fiche Google ; photos professionnelles © Thierry Perre).</p>
+<nav class="actionbar" aria-label="Actions rapides"><a class="main" href="tel:+33960037909">Réserver par téléphone</a><a class="alt" href="mailto:lebiodycanon@gmail.com">Écrire</a><a class="alt" href="https://www.google.com/maps/search/?api=1&query=Le%20Biody%20Canon%2C%205%20place%20Fernand%20Rey%2C%2069001%20Lyon">Itinéraire</a></nav>
+<script>
+document.documentElement.classList.add("js");
+(function () {
+  // mobile menu
+  var root = document.documentElement, btn = document.querySelector(".nav-toggle"), nav = document.getElementById("site-nav");
+  function close() { root.classList.remove("nav-open"); if (btn) btn.setAttribute("aria-expanded", "false"); }
+  if (btn) btn.addEventListener("click", function () { var o = root.classList.toggle("nav-open"); btn.setAttribute("aria-expanded", o ? "true" : "false"); });
+  if (nav) nav.addEventListener("click", function (e) { if (e.target.closest("a")) close(); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
+  // header state on scroll
+  var hd = document.querySelector(".site-header");
+  function onScroll() { if (hd) hd.classList.toggle("scrolled", window.scrollY > 40); }
+  window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+  // menu tabs (arrow keys supported)
+  var tabs = [].slice.call(document.querySelectorAll('[role="tab"]'));
+  document.querySelectorAll(".tab-panel[data-hide]").forEach(function (p) { p.hidden = true; });
+  function select(t) { tabs.forEach(function (x) { var on = x === t; x.setAttribute("aria-selected", on); x.tabIndex = on ? 0 : -1; document.getElementById(x.getAttribute("aria-controls")).hidden = !on; }); }
+  tabs.forEach(function (t, i) {
+    t.addEventListener("click", function () { select(t); });
+    t.addEventListener("keydown", function (e) { var d = e.key === "ArrowRight" ? 1 : e.key === "ArrowLeft" ? -1 : 0; if (d) { var n = tabs[(i + d + tabs.length) % tabs.length]; n.focus(); select(n); } });
+  });
+  // hours: today + open now (Paris time)
+  var tb = document.querySelector(".hours");
+  if (tb) {
+    var H = JSON.parse(tb.getAttribute("data-hours")), now = new Date(new Date().toLocaleString("en-US", { timeZone: "Europe/Paris" }));
+    var d = now.getDay(), m = now.getHours() * 60 + now.getMinutes(), names = ["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+    [].forEach.call(tb.rows, function (r) { var lab = r.getAttribute("data-days").replace(/\s/g, ""), parts = lab.split(/[–-]/), a = names.indexOf(parts[0]), z = names.indexOf(parts[1] || parts[0]);
+      if (a < 0) return; for (var i = a; ; i = (i + 1) % 7) { if (i === d) r.classList.add("today"); if (i === z) break; } });
+    var slots = H[d] || [], open = slots.some(function (s) { return m >= s[0] && m < s[1]; }), next = slots.filter(function (s) { return m < s[0]; })[0];
+    var txt = open ? "Ouvert maintenant" : next ? "Ouvre à " + Math.floor(next[0] / 60) + "h" + String(next[0] % 60).padStart(2, "0") : "Fermé pour aujourd'hui";
+    document.querySelectorAll(".open-badge").forEach(function (el) { el.classList.add(open ? "yes" : "no"); el.querySelector("span").textContent = txt; });
+  }
+  // reveal on scroll
+  var els = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) { var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }); }, { rootMargin: "0px 0px -8% 0px" }); els.forEach(function (el) { io.observe(el); }); }
+  else els.forEach(function (el) { el.classList.add("in"); });
+  // visit counter (Uimad Suivi): demo opened, and from where (?r=email / relance / offre)
+  try { if (/github\.io$|gt\.tc$/.test(location.hostname)) new Image().src = "https://script.google.com/macros/s/AKfycbwT_75Rs8ZV6YeH874yP-UA_grZhIppzJoauUtmGz5oRdehOFW4YrJRW-vXeh3ERiJH/exec" + "?t=visit&id=le-biody-canon&ua=" + encodeURIComponent(new URLSearchParams(location.search).get("r") || "direct"); } catch (e) {}
+})();
+</script>
 </body>
 </html>

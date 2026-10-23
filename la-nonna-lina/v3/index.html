@@ -137,6 +137,14 @@
     .sticker { width:100px; height:100px; font-size:18px; right:8px; }
     .panel-img img { aspect-ratio:16/10; }
   }
+  /* services (b.extras) */
+  .extras-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .extra { margin:0; }
+  .extra img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--ex-radius,16px); }
+  .extra h3 { margin:16px 0 6px; font-size:20px; }
+  .extra p { margin:0; opacity:.8; font-size:.95em; }
+  .brand-logo { height:var(--logo-h,48px); width:auto; display:block; }
+
 </style>
 </head>
 <body>
@@ -172,6 +180,7 @@
   <h2 class="reveal">Au comptoir</h2><p class="sub reveal">Pâtes fraîches, raviolis, gnocchis et produits italiens.</p>
   <div class="cards"><article class="card reveal"><img src="../img/opt/g-pates-1600.jpg" srcset="../img/opt/g-pates-800.jpg 800w, ../img/opt/g-pates-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 25vw" alt="Pâtes fraîches" loading="lazy" decoding="async"><div><b>Pâtes fraîches</b><span>Faites maison.</span></div></article><article class="card reveal"><img src="../img/opt/g-comptoir-1600.jpg" srcset="../img/opt/g-comptoir-800.jpg 800w, ../img/opt/g-comptoir-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 25vw" alt="Salumi &amp; formaggi" loading="lazy" decoding="async"><div><b>Salumi &amp; formaggi</b><span>La charcuterie et les fromages italiens.</span></div></article><article class="card reveal"><img src="../img/opt/g-panier-1600.jpg" srcset="../img/opt/g-panier-800.jpg 800w, ../img/opt/g-panier-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 25vw" alt="Épicerie fine" loading="lazy" decoding="async"><div><b>Épicerie fine</b><span>Huiles, sauces, douceurs italiennes.</span></div></article><article class="card reveal"><img src="../img/opt/g-boutique-1600.jpg" srcset="../img/opt/g-boutique-800.jpg 800w, ../img/opt/g-boutique-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 25vw" alt="La boutique" loading="lazy" decoding="async"><div><b>La boutique</b><span>6 rue Victor Hugo.</span></div></article></div>
 </div></section>
+
 
 <section class="menu-sec" id="carte"><div class="wrap">
   <h2 class="reveal">La carte</h2><p class="sub reveal">Box du midi et épicerie, aux prix affichés en boutique.</p>

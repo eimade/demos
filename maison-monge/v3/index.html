@@ -137,6 +137,14 @@
     .sticker { width:100px; height:100px; font-size:18px; right:8px; }
     .panel-img img { aspect-ratio:16/10; }
   }
+  /* services (b.extras) */
+  .extras-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .extra { margin:0; }
+  .extra img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--ex-radius,16px); }
+  .extra h3 { margin:16px 0 6px; font-size:20px; }
+  .extra p { margin:0; opacity:.8; font-size:.95em; }
+  .brand-logo { height:var(--logo-h,48px); width:auto; display:block; }
+
 </style>
 </head>
 <body>
@@ -172,6 +180,7 @@
   <h2 class="reveal">La vitrine du jour</h2><p class="sub reveal">Ce que nos clients viennent chercher, rue Monge.</p>
   <div class="cards"><article class="card reveal"><img src="../img/opt/g-pains-1600.jpg" srcset="../img/opt/g-pains-800.jpg 800w, ../img/opt/g-pains-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 25vw" alt="Pains" loading="lazy" decoding="async"><div><b>Pains</b><span>Pain Tradition et pains spéciaux.</span></div></article><article class="card reveal"><img src="../img/opt/g-desserts-1600.jpg" srcset="../img/opt/g-desserts-800.jpg 800w, ../img/opt/g-desserts-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 25vw" alt="Pâtisseries" loading="lazy" decoding="async"><div><b>Pâtisseries</b><span>Pour le goûter ou le dessert.</span></div></article><article class="card reveal"><img src="../img/opt/g-viennoiseries-1600.jpg" srcset="../img/opt/g-viennoiseries-800.jpg 800w, ../img/opt/g-viennoiseries-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 25vw" alt="Viennoiseries" loading="lazy" decoding="async"><div><b>Viennoiseries</b><span>Pour bien commencer la journée.</span></div></article><article class="card reveal"><img src="../img/opt/g-chocolats-1600.jpg" srcset="../img/opt/g-chocolats-800.jpg 800w, ../img/opt/g-chocolats-1600.jpg 1600w" sizes="(max-width:900px) 92vw, 25vw" alt="Chocolats &amp; macarons" loading="lazy" decoding="async"><div><b>Chocolats &amp; macarons</b><span>Faits maison.</span></div></article></div>
 </div></section>
+
 
 <section class="menu-sec" id="carte"><div class="wrap">
   <h2 class="reveal">La carte de la maison</h2><p class="sub reveal">Prix affichés en boutique.</p>

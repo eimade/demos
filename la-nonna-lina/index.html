@@ -153,6 +153,14 @@
     .facts { grid-template-columns:1fr; }
     .panel-img img { aspect-ratio:16/10; border-radius:16px; }
   }
+  /* services (b.extras) */
+  .extras-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:22px; }
+  .extra { margin:0; }
+  .extra img { width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:var(--ex-radius,16px); }
+  .extra h3 { margin:16px 0 6px; font-size:20px; }
+  .extra p { margin:0; opacity:.8; font-size:.95em; }
+  .brand-logo { height:var(--logo-h,48px); width:auto; display:block; }
+
 </style>
 </head>
 <body>
@@ -197,6 +205,7 @@
     <ul class="facts"><li>Pâtes fraîches faites maison</li><li>Raviolis, gnocchis, lasagnes</li><li>Pasta box du mardi au vendredi</li><li>Épicerie fine italienne</li></ul>
   </div>
 </div></section>
+
 
 <section id="carte"><div class="wrap">
   <div class="ornament reveal">✦</div>
